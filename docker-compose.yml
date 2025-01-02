@@ -1,0 +1,129 @@
+version: "3"
+
+services:
+  sql:
+    image: mcr.microsoft.com/mssql/server:2019-GA-ubuntu-16.04
+    container_name: db_sql
+    restart: always
+    ports:
+    - 1436:1433
+    environment:
+    - ACCEPT_EULA=Y
+    - SA_PASSWORD=Unu#2024
+    networks:
+    - TDB
+  postgres:
+    image: postgres:alpine3.14
+    container_name: db_postgres
+    restart: always
+    environment:
+    - POSTGRES_PASSWORD=Unu#2024
+    ports:
+    - 5435:5432
+    networks:
+    - TDB
+  mongo:
+    image: mongo:5.0.2
+    container_name: db_mongo
+    restart: always
+    environment:
+    - MONGO_INITDB_ROOT_USERNAME=admin
+    - MONGO_INITDB_ROOT_PASSWORD=123456
+    ports:
+    - 27020:27017
+    networks:
+    - TDB 
+  mysql:
+    image: mysql:8.0.26
+    container_name: db_mysql
+    restart: always
+    environment:
+    - MYSQL_ROOT_PASSWORD=Unu#2024
+    ports:
+    - 3309:3306
+    - 33063:33060
+    networks:
+    - TDB 
+  redis:
+    image: redis:6.2.6
+    command: --requirepass Unu#2024
+    container_name: db-redis
+    restart: always
+    environment:
+    - REDIS_PASSWORD=Unu#2024
+    ports:
+    - 6379:6379
+    networks:
+    - TDB 
+  broker:
+    image: johnnypark/kafka-zookeeper:2.6.0
+    container_name: service-broker
+    restart: always
+    ports:
+      - "2181:2181"
+      - "9092:9092"
+    environment:
+    - ADVERTISED_HOST=127.0.0.1
+    - NUM_PARTITIONS=3
+    - KAFKA_AUTO_CREATE_TOPICS_ENABLE=true
+    networks:
+    - TDB
+  seguridad:
+    container_name: app-Estudiantes
+    build:
+      context: ./MSEstudiantes
+    depends_on:
+      - sql
+    ports:
+      - "8085:85"
+    networks:
+    - TDB
+  deposit:
+    container_name: app-Matricula 
+    build:
+      context: ./MSMatricula
+    depends_on:
+      - postgres
+      - broker
+    ports:
+      - "8086:86"
+    networks:
+    - TDB
+  account:
+    container_name: app-pago
+    build:
+      context: ./MsPago
+    depends_on:
+      - mysql
+      - broker
+    ports:
+      - "8087:87"
+    networks:
+    - TDB
+  transaction:
+    container_name: app-Usuario
+    build:
+      context: ./MsUsuario
+    depends_on:
+      - mongo
+      - broker
+    ports:
+      - "8088:88"
+    networks:
+    - TDB
+  gateway:
+    container_name: app-gateway
+    build:
+      context: ./MSGateway
+    depends_on:
+      - usuario
+      - pago
+      - matricula
+      - estudiante
+    ports:
+      - "6004:6001"
+    networks:
+    - TDB
+networks:
+  TDB:
+    name: ms-unu
