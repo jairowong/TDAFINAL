@@ -1,5 +1,13 @@
 package GestionEstudiantes.MSEstudiantes.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="apoderado")
 public class ApoderadoModel {
     
     private Long id;
@@ -12,6 +20,10 @@ public class ApoderadoModel {
     private String estado_civil;
     private String telefono;
     private String direccion;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    
     public Long getId() {
         return id;
     }
