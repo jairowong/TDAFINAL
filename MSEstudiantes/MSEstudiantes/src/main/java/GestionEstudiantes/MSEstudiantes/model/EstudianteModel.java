@@ -9,10 +9,12 @@ public class EstudianteModel {
     private String ape_materno;
     private int edad;
     private String sexo;
+
+
     public Long getId() {
         return id;
     }
-    public void setId(Long id) {
+    public void setIdEstudiante(Long id) {
         this.id = id;
     }
     public String getDni() {
@@ -51,5 +53,6 @@ public class EstudianteModel {
     public void setSexo(String sexo) {
         this.sexo = sexo;
     }
+   
     
 }
