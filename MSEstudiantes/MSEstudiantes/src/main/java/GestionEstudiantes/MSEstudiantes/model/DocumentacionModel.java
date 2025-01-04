@@ -8,7 +8,7 @@ public class DocumentacionModel {
     public Long getId() {
         return id;
     }
-    public void setId(Long id) {
+    public void setIdDocumentacion(Long id) {
         this.id = id;
     }
     public String getCertificado() {
