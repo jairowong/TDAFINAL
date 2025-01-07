@@ -9,11 +9,11 @@ public class UtilsProperties {
     @Value("${prop.MS_MNT_GUARDAR}")
     public String MS_EXITO_GUARDAR;
 
-    @Value("${prop.MS_MNT_PROCESO}")
+    @Value("${prop.MS_ERROR_PROCESO}")
     public String MS_EROR_PROCESAR;
 
     @Value("${prop.MS_NO_ENCONTRO}")
-    public String MS_NO_ENCONTRO;
+    public String MS_NO_ENCONTRADO;
 
     @Value("${prop.MS_ERROR_REGISTRO}") 
     public String MS_ERROR_RECUPERAR;
