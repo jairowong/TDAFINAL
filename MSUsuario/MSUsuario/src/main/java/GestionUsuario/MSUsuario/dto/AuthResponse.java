@@ -1,28 +1,33 @@
 package GestionUsuario.MSUsuario.dto;
 
- 
 import java.io.Serializable;
- 
-public class AuthResponse implements Serializable {
 
+public class AuthResponse implements Serializable {
     private static final long serialVersionUID = 1L;
-    private final String token;
-    private final String userName;
-    private final String accessTokenExpiration;
- 
-    public AuthResponse(String token, String userName, String accessTokenExpiration) {
+
+    private String message;
+    private String token;
+
+    public AuthResponse() {}
+
+    public AuthResponse(String message, String token) {
+        this.message = message;
         this.token = token;
-        this.userName = userName;
-        this.accessTokenExpiration = accessTokenExpiration;
     }
- 
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
     public String getToken() {
         return token;
     }
-    public String getAccessTokenExpiration() {
-        return accessTokenExpiration;
-    }
-    public String getUserName() {
-        return userName;
+
+    public void setToken(String token) {
+        this.token = token;
     }
 }
