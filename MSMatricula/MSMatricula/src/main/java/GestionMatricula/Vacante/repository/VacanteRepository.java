@@ -1,5 +1,9 @@
 package GestionMatricula.Vacante.repository;
 
-public class VacanteRepository {
+import org.springframework.data.repository.CrudRepository;
+
+import GestionMatricula.Vacante.model.Vacante;
+
+public interface VacanteRepository extends CrudRepository<Vacante,Integer>{
 
 }
