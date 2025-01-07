@@ -1,4 +1,4 @@
-package GestionMatricula.Solicitu_Matricula.controller;
+package GestionMatricula.MSMatricula.controllers;
 
 import java.util.List;
 import org.slf4j.Logger;
@@ -17,10 +17,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-
+import GestionMatricula.MSMatricula.model.Solicitud;
+import GestionMatricula.MSMatricula.service.SolicitudServiceIpm;
 import GestionMatricula.Solicitu_Matricula.route.Ruta;
-import GestionMatricula.Solicitu_Matricula.model.Solicitud;
-import GestionMatricula.Solicitu_Matricula.service.SolicitudServiceIpm;
 
 @RestController
 @RequestMapping(Ruta.Api)

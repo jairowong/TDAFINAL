@@ -1,4 +1,4 @@
-package GestionMatricula.Vacante.route;
+package GestionMatricula.MSMatricula.route;
 
 public class Ruta {
 

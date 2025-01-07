@@ -1,4 +1,4 @@
-package GestionMatricula.Solicitu_Matricula.model;
+package GestionMatricula.MSMatricula.model;
 
 import java.sql.Date;
 

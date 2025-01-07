@@ -1,12 +1,12 @@
-package GestionMatricula.Solicitu_Matricula.service;
+package GestionMatricula.MSMatricula.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import GestionMatricula.Solicitu_Matricula.model.Solicitud;
-import GestionMatricula.Solicitu_Matricula.repository.SolicitudRepository;
+import GestionMatricula.MSMatricula.model.Solicitud;
+import GestionMatricula.MSMatricula.repositorio.SolicitudRepository;
 
 
 @Service

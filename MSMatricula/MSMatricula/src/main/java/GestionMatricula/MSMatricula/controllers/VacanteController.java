@@ -1,4 +1,4 @@
-package GestionMatricula.Vacante.controller;
+package GestionMatricula.MSMatricula.controllers;
 
 import java.util.List;
 import org.slf4j.Logger;
@@ -17,9 +17,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import GestionMatricula.Vacante.model.Vacante;
-import GestionMatricula.Vacante.route.Ruta;
-import GestionMatricula.Vacante.service.VacanteServiceIpm;
+import GestionMatricula.MSMatricula.model.Vacante;
+import GestionMatricula.MSMatricula.route.Ruta;
+import GestionMatricula.MSMatricula.service.VacanteServiceIpm;
 
 
 @RestController
