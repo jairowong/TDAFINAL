@@ -17,7 +17,7 @@ public class PagoModel {
     private String tipoPago;
     @ManyToOne
     @JoinColumn(name = "id_usuario")
-    private UsuarioModel usuario;
+    private MsUsuario usuario;
 
     public PagoModel(String nombre, String apellido, Date fecha, double monto, String tipoPago, UsuarioModel usuario) {
         this.nombre = nombre;
@@ -25,7 +25,7 @@ public class PagoModel {
         this.fecha = fecha;
         this.monto = monto;
         this.tipoPago = tipoPago;
-        this.usuario = usuario;
+        this.idusuario = usuario;
     }
 
     public int getId() {
@@ -81,6 +81,6 @@ public class PagoModel {
     }
 
     public void setUsuario(UsuarioModel usuario) {
-        this.usuario = usuario;
+        this.idUsuario = usuario.getId();
     }
 }   
