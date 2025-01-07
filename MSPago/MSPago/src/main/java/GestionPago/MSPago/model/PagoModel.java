@@ -8,56 +8,41 @@ import jakarta.persistence.*;
 @Table(name = "pago")
 public class PagoModel {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
-    private String nombre;
-    private String apellido;
-    private Date fecha;
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seqPagos")
+    @SequenceGenerator(name = "seqPagos", allocationSize = 1, sequenceName = "seq_pagos")
+    @Column(name = "id_pago")
+    private Integer id;
+
+    @Column(name = "id_matricula")
+    private Integer idMatr;
+
+    @Column(name = "fecha_pago ")
+    private Date fechaMatr;
+
     private double monto;
-    private String tipoPago;
-    @ManyToOne
-    @JoinColumn(name = "id_usuario")
-    private MsUsuario usuario;
 
-    public PagoModel(String nombre, String apellido, Date fecha, double monto, String tipoPago, UsuarioModel usuario) {
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.fecha = fecha;
-        this.monto = monto;
-        this.tipoPago = tipoPago;
-        this.idusuario = usuario;
-    }
-
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
-    public String getNombre() {
-        return nombre;
+    public Integer getIdMatr() {
+        return idMatr;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setIdMatr(Integer idMatr) {
+        this.idMatr = idMatr;
     }
 
-    public String getApellido() {
-        return apellido;
+    public Date getFechaMatr() {
+        return fechaMatr;
     }
 
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
-    }
-
-    public Date getFecha() {
-        return fecha;
-    }
-
-    public void setFecha(Date fecha) {
-        this.fecha = fecha;
+    public void setFechaMatr(Date fechaMatr) {
+        this.fechaMatr = fechaMatr;
     }
 
     public double getMonto() {
@@ -68,19 +53,4 @@ public class PagoModel {
         this.monto = monto;
     }
 
-    public String getTipoPago() {
-        return tipoPago;
-    }
-
-    public void setTipoPago(String tipoPago) {
-        this.tipoPago = tipoPago;
-    }
-
-    public UsuarioModel getUsuario() {
-        return usuario;
-    }
-
-    public void setUsuario(UsuarioModel usuario) {
-        this.idUsuario = usuario.getId();
-    }
-}   
+}
