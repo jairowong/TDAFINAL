@@ -95,7 +95,7 @@ public class SolicitudController {
             log.error("nose pudo modificar la solicitud");
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("nose creo la solicitud");            
         }  try {
-            modiSoli.setId(id);
+            
             modiSoli.setFecha_solicitud(soli.getFecha_solicitud());
             modiSoli.setEstado(soli.getEstado());
 

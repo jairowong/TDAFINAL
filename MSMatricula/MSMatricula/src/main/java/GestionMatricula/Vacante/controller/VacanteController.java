@@ -76,7 +76,7 @@ public class VacanteController {
 
     public ResponseEntity<?> crearAlumnos(@RequestBody Vacante vacam){
         try {
-            if (vacam.getIdgrado()==null || vacam.getIdseccion()==null || vacam.getVacantes_disponibles()==null || vacam.getAño_alectivo()==null){
+            if (vacam.getVacantes_disponibles()==null || vacam.getAño_alectivo()==null){
                 log.error("nose pudo crear la vacante");
                 return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("nose creo el alumno");      
             }log.info("vacante creada");
@@ -92,7 +92,7 @@ public class VacanteController {
     public ResponseEntity<?> modificarvacantes(@PathVariable Integer id, @RequestBody Vacante vacam){
 
         Vacante modiVacam = new Vacante();
-        if (vacam.getIdgrado()==null || vacam.getIdseccion()==null || vacam.getVacantes_disponibles()==null || vacam.getAño_alectivo()==null) {
+        if (vacam.getVacantes_disponibles()==null || vacam.getAño_alectivo()==null) {
             log.error("nose pudo modificar la vacante");
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("nose creo la vacante");            
         }  try {
