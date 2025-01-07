@@ -1,4 +1,4 @@
-package com.edu.pe.model;
+package GestionPago.MSPago.model;
 
 import java.util.Date;
 

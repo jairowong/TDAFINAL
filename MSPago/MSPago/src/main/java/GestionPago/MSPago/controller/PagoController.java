@@ -1,5 +1,6 @@
 package GestionPago.MSPago.controller;
 
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -12,20 +13,17 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.edu.pe.config.UtilsProperties;
-import com.edu.pe.dto.PagoDTO;
-import com.edu.pe.model.PagoModel;
-import com.edu.pe.service.PagoService;
-
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import org.modelmapper.ModelMapper;
+
+import GestionPago.MSPago.service.PagoService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 
 @RestController
 @RequestMapping("/api/pago")
@@ -36,7 +34,7 @@ public class PagoController {
 	private PagoService alumnoService;
 
 	@Autowired
-	private UtilsProperties prop;
+	private UtilsProperties prop;	
 
 	@GetMapping("/getAll")
 	public ResponseEntity<?> getAll() {
