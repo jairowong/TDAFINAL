@@ -1,7 +1,8 @@
-package GestionMatricula.Vacante.service;
+package GestionMatricula.MSMatricula.service;
 
 import java.util.List;
-import GestionMatricula.Vacante.model.Vacante;
+
+import GestionMatricula.MSMatricula.model.Vacante;
 
 public interface IVacanteService {
 

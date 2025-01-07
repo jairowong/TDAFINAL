@@ -1,8 +1,8 @@
-package GestionMatricula.Solicitu_Matricula.service;
+package GestionMatricula.MSMatricula.service;
 
 import java.util.List;
 
-import GestionMatricula.Solicitu_Matricula.model.Solicitud;
+import GestionMatricula.MSMatricula.model.Solicitud;
 
 
 public interface ISolicitudService {

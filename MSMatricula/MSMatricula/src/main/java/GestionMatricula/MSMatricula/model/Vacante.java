@@ -1,4 +1,4 @@
-package GestionMatricula.Vacante.model;
+package GestionMatricula.MSMatricula.model;
 
 import java.sql.Date;
 

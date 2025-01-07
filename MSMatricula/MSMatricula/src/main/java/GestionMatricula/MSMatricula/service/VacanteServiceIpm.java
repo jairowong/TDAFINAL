@@ -1,12 +1,12 @@
-package GestionMatricula.Vacante.service;
+package GestionMatricula.MSMatricula.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import GestionMatricula.Vacante.model.Vacante;
-import GestionMatricula.Vacante.repository.VacanteRepository;
+import GestionMatricula.MSMatricula.model.Vacante;
+import GestionMatricula.MSMatricula.repositorio.VacanteRepository;
 
 @Service
 
