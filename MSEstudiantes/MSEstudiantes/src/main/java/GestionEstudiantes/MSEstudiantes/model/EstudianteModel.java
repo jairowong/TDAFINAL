@@ -13,7 +13,7 @@ public class EstudianteModel {
     private Long id;
     private String dni; 
     private String nombre;
-    private String ape_apeterno;
+    private String ape_paterno;
     private String ape_materno;
     private int edad;
     private String sexo;
@@ -39,11 +39,11 @@ public class EstudianteModel {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-    public String getApe_apeterno() {
-        return ape_apeterno;
+    public String getApe_paterno() {
+        return ape_paterno;
     }
-    public void setApe_apeterno(String ape_apeterno) {
-        this.ape_apeterno = ape_apeterno;
+    public void setApe_paterno(String ape_paterno) {
+        this.ape_paterno = ape_paterno;
     }
     public String getApe_materno() {
         return ape_materno;
