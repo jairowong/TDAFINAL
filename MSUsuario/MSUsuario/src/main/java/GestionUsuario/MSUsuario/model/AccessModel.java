@@ -1,41 +1,30 @@
 package GestionUsuario.MSUsuario.model;
 
+import jakarta.persistence.*;
 import java.io.Serializable;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
-
 @Entity
-@Table(name = "access") // Nombre de la tabla en la base de datos
+@Table(name = "access")
 public class AccessModel implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // Generación automática del ID
-    @Column(name = "id_user") // Mapeo con la columna de la tabla
-    private Long id_user; // Cambiado a Long, ya que PostgreSQL maneja IDs numéricos por convención
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id; // Primary Key generada automáticamente
 
-    @Column(name = "username", nullable = false) // Columna no nula
+    @Column(name = "username", nullable = false, unique = true)
     private String username;
 
-    @Column(name = "password", nullable = false) // Columna no nula
+    @Column(name = "password", nullable = false)
     private String password;
 
-    @Override
-    public String toString() {
-        return "AccessModel [id_user=" + id_user + ", username=" + username + ", password=" + password + "]";
+    // Getters y Setters
+    public Long getId() {
+        return id;
     }
 
-    public Long getId_user() {
-        return id_user;
-    }
-
-    public void setId_user(Long id_user) {
-        this.id_user = id_user;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getUsername() {
@@ -52,5 +41,10 @@ public class AccessModel implements Serializable {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    @Override
+    public String toString() {
+        return "AccessModel [id=" + id + ", username=" + username + ", password=" + password + "]";
     }
 }
