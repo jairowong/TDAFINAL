@@ -24,7 +24,7 @@ public class EstudianteModel {
     public Long getId() {
         return id;
     }
-    public void setIdEstudiante(Long id) {
+    public void setId(Long id) {
         this.id = id;
     }
     public String getDni() {

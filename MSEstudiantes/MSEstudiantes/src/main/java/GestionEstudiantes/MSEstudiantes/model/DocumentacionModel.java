@@ -20,7 +20,7 @@ public class DocumentacionModel {
     public Long getId() {
         return id;
     }
-    public void setIdDocumentacion(Long id) {
+    public void setId(Long id) {
         this.id = id;
     }
     public String getCertificado() {

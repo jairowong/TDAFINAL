@@ -47,7 +47,7 @@ public class EstudianteController {
     // update
     @PutMapping("/update/{id}")
     public EstudianteModel update(@PathVariable Long id, @RequestBody EstudianteModel model) {
-        model.setIdEstudiante(id);
+        model.setId(id);
         return estudianteService.update(model);
     }
 
