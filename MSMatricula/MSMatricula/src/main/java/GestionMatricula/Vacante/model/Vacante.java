@@ -16,9 +16,9 @@ public class Vacante {
 
           @Id
           @GeneratedValue(strategy = GenerationType.IDENTITY)
-          public String Idgrado;
-          public String Idseccion;
-          public String vacantes_disponibles;
+          public int Idgrado;
+          public int Idseccion;
+          public int vacantes_disponibles;
           public Date año_alectivo;
 
           
@@ -26,7 +26,7 @@ public class Vacante {
         }
 
 
-        public Vacante(String idgrado, String idseccion, String vacantes_disponibles, Date año_alectivo) {
+        public Vacante(int idgrado, int idseccion, int vacantes_disponibles, Date año_alectivo) {
             Idgrado = idgrado;
             Idseccion = idseccion;
             this.vacantes_disponibles = vacantes_disponibles;
@@ -34,32 +34,32 @@ public class Vacante {
         }
 
 
-        public String getIdgrado() {
+        public int getIdgrado() {
             return Idgrado;
         }
 
 
-        public void setIdgrado(String idgrado) {
+        public void setIdgrado(int idgrado) {
             Idgrado = idgrado;
         }
 
 
-        public String getIdseccion() {
+        public int getIdseccion() {
             return Idseccion;
         }
 
 
-        public void setIdseccion(String idseccion) {
+        public void setIdseccion(int idseccion) {
             Idseccion = idseccion;
         }
 
 
-        public String getVacantes_disponibles() {
+        public int getVacantes_disponibles() {
             return vacantes_disponibles;
         }
 
 
-        public void setVacantes_disponibles(String vacantes_disponibles) {
+        public void setVacantes_disponibles(int vacantes_disponibles) {
             this.vacantes_disponibles = vacantes_disponibles;
         }
 
@@ -73,9 +73,7 @@ public class Vacante {
             this.año_alectivo = año_alectivo;
         }
 
-        
 
-    
 
 
 

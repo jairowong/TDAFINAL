@@ -32,8 +32,6 @@ public class VacanteController {
     @Autowired
     VacanteServiceIpm servicioIpm;
 
-
-
     @GetMapping(Ruta.ListaVacante)
 
     public ResponseEntity<List<Vacante>> mostrarVacantes(){
@@ -133,6 +131,6 @@ public class VacanteController {
                 return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("vacante no eliminada");
             }
 
-
+        }
 
 }

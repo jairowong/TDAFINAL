@@ -1,5 +1,9 @@
 package GestionMatricula.Solicitu_Matricula.repository;
 
-public class SolicitudRepository {
+import org.springframework.data.repository.CrudRepository;
+
+import GestionMatricula.Solicitu_Matricula.model.Solicitud;
+
+public interface SolicitudRepository extends CrudRepository<Solicitud,Integer>{
 
 }
