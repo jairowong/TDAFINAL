@@ -27,7 +27,7 @@ public class ApoderadoModel {
     public Long getId() {
         return id;
     }
-    public void setIdApoderado(Long id) {
+    public void setId(Long id) {
         this.id = id;
     }
     public String getNombre() {

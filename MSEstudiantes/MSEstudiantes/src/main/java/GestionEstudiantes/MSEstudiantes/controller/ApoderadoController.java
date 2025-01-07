@@ -47,7 +47,7 @@ public class ApoderadoController {
     // update
     @PutMapping("/update/{id}")
     public ApoderadoModel update(@PathVariable Long id, @RequestBody ApoderadoModel model) {
-        model.setIdApoderado(id);
+        model.setId(id);
         return apoderadoService.update(model);
     }
 

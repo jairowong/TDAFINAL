@@ -47,7 +47,7 @@ public class DocumentacionController {
     // update
     @PutMapping("/update/{id}")
     public DocumentacionModel update(@PathVariable Long id, @RequestBody DocumentacionModel model) {
-        model.setIdDocumentacion(id);
+        model.setId(id);
         return documentacionService.update(model);
     }
 
