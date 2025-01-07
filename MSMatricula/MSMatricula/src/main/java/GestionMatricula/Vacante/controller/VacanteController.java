@@ -96,7 +96,7 @@ public class VacanteController {
             log.error("nose pudo modificar la vacante");
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("nose creo la vacante");            
         }  try {
-            modiVacam.setId(id);
+          
             modiVacam.setIdgrado(vacam.getIdgrado());
             modiVacam.setIdseccion(vacam.getIdseccion());
             modiVacam.setVacantes_disponibles(vacam.getVacantes_disponibles());

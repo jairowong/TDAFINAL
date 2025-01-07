@@ -44,6 +44,11 @@ public class SolicitudServiceIpm implements ISolicitudService{
 
     }
 
+    @Override
+    public Solicitud mostrarSolicitudID(Integer id) {
+        return null;
+    }
+
     
 
 }
