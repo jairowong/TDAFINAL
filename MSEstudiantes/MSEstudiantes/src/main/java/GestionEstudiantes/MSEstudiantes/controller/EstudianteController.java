@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import GestionEstudiantes.MSEstudiantes.model.EstudianteModel;
 import GestionEstudiantes.MSEstudiantes.service.EstudianteService;
+import jakarta.validation.Valid;
 import GestionEstudiantes.MSEstudiantes.router.RouterApi;
 
 @RestController
@@ -33,7 +34,7 @@ public class EstudianteController {
     
 
     @PostMapping("/create")
-    public EstudianteModel create(@RequestBody EstudianteModel model)
+    public EstudianteModel create(@Valid @RequestBody EstudianteModel model)
     {   
         return estudianteService.add(model);
     }
@@ -46,7 +47,7 @@ public class EstudianteController {
 
     // update
     @PutMapping("/update/{id}")
-    public EstudianteModel update(@PathVariable Long id, @RequestBody EstudianteModel model) {
+    public EstudianteModel update(@PathVariable Long id, @Valid @RequestBody EstudianteModel model) {
         model.setId(id);
         return estudianteService.update(model);
     }
