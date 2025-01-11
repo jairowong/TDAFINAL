@@ -1,4 +1,5 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 2025-01-07 18:49:45 - [restartedMain] INFO  G.M.MsEstudiantesApplication - Starting MsEstudiantesApplication using Java 17.0.9 with PID 24672 (C:\Users\walte\TDAFINAL\MSEstudiantes\MSEstudiantes\target\classes started by walte in C:\Users\walte\TDAFINAL\MSEstudiantes)
 2025-01-07 18:49:45 - [restartedMain] DEBUG G.M.MsEstudiantesApplication - Running with Spring Boot v3.4.1, Spring v6.2.1
 2025-01-07 18:49:45 - [restartedMain] INFO  G.M.MsEstudiantesApplication - No active profile set, falling back to 1 default profile: "default"
@@ -20,6 +21,8 @@
 2025-01-07 18:49:47 - [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
 2025-01-07 18:49:47 - [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
 =======
+=======
+>>>>>>> Stashed changes
 2025-01-07 17:30:39 - [restartedMain] INFO  G.M.MsEstudiantesApplication - Starting MsEstudiantesApplication using Java 17.0.9 with PID 24664 (C:\Users\walte\TDAFINAL\MSEstudiantes\MSEstudiantes\target\classes started by walte in C:\Users\walte\TDAFINAL\MSEstudiantes)
 2025-01-07 17:30:39 - [restartedMain] DEBUG G.M.MsEstudiantesApplication - Running with Spring Boot v3.4.1, Spring v6.2.1
 2025-01-07 17:30:39 - [restartedMain] INFO  G.M.MsEstudiantesApplication - No active profile set, falling back to 1 default profile: "default"
@@ -40,6 +43,9 @@
 2025-01-07 17:30:42 - [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4f9ea02
 2025-01-07 17:30:42 - [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
 2025-01-07 17:30:42 - [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
@@ -48,6 +54,7 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 2025-01-07 18:49:48 - [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
 2025-01-07 18:49:48 - [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
@@ -165,6 +172,8 @@
 2025-01-07 18:55:36 - [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
 2025-01-07 18:55:36 - [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
 =======
+=======
+>>>>>>> Stashed changes
 2025-01-07 17:30:42 - [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
 2025-01-07 17:30:43 - [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
 2025-01-07 17:30:43 - [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
@@ -199,6 +208,9 @@
 2025-01-07 17:34:45 - [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@234235f9
 2025-01-07 17:34:45 - [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
 2025-01-07 17:34:45 - [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
@@ -207,6 +219,7 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 2025-01-07 18:55:37 - [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
 2025-01-07 18:55:37 - [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
@@ -241,6 +254,8 @@
 2025-01-07 18:59:47 - [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
 2025-01-07 18:59:47 - [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
 =======
+=======
+>>>>>>> Stashed changes
 2025-01-07 17:34:45 - [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
 2025-01-07 17:34:45 - [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
 2025-01-07 17:34:46 - [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
@@ -271,6 +286,9 @@
 2025-01-07 17:38:13 - [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6af86c05
 2025-01-07 17:38:13 - [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
 2025-01-07 17:38:13 - [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
@@ -279,6 +297,7 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 2025-01-07 18:59:47 - [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
 2025-01-07 18:59:47 - [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
@@ -297,6 +316,8 @@
 2025-01-07 19:02:43 - [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2025-01-07 19:02:43 - [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
 =======
+=======
+>>>>>>> Stashed changes
 2025-01-07 17:38:13 - [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
 2025-01-07 17:38:14 - [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
 2025-01-07 17:38:14 - [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
@@ -607,4 +628,7 @@
 2025-01-07 18:20:15 - [http-nio-8801-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2025-01-07 18:20:15 - [http-nio-8801-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
 2025-01-07 18:23:37 - [http-nio-8801-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public GestionEstudiantes.MSEstudiantes.model.ApoderadoModel GestionEstudiantes.MSEstudiantes.controller.ApoderadoController.create(GestionEstudiantes.MSEstudiantes.model.ApoderadoModel) with 9 errors: [Field error in object 'apoderadoModel' on field 'estado_civil': rejected value [null]; codes [NotEmpty.apoderadoModel.estado_civil,NotEmpty.estado_civil,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [apoderadoModel.estado_civil,estado_civil]; arguments []; default message [estado_civil]]; default message [El estado civil no puede estar vacío]] [Field error in object 'apoderadoModel' on field 'nombre': rejected value []; codes [NotEmpty.apoderadoModel.nombre,NotEmpty.nombre,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [apoderadoModel.nombre,nombre]; arguments []; default message [nombre]]; default message [El nombre no puede estar vacío]] [Field error in object 'apoderadoModel' on field 'dni': rejected value [123456789]; codes [Size.apoderadoModel.dni,Size.dni,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [apoderadoModel.dni,dni]; arguments []; default message [dni],8,8]; default message [El DNI debe tener exactamente 8 caracteres]] [Field error in object 'apoderadoModel' on field 'direccion': rejected value []; codes [NotEmpty.apoderadoModel.direccion,NotEmpty.direccion,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [apoderadoModel.direccion,direccion]; arguments []; default message [direccion]]; default message [La dirección no puede estar vacía]] [Field error in object 'apoderadoModel' on field 'telefono': rejected value []; codes [NotEmpty.apoderadoModel.telefono,NotEmpty.telefono,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [apoderadoModel.telefono,telefono]; arguments []; default message [telefono]]; default message [El teléfono no puede estar vacío]] [Field error in object 'apoderadoModel' on field 'telefono': rejected value []; codes [Pattern.apoderadoModel.telefono,Pattern.telefono,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [apoderadoModel.telefono,telefono]; arguments []; default message [telefono],[Ljakarta.validation.constraints.Pattern$Flag;@5d1bbb7c,^\d{9}$]; default message [El teléfono debe contener exactamente 9 dígitos]] [Field error in object 'apoderadoModel' on field 'apellido': rejected value []; codes [NotEmpty.apoderadoModel.apellido,NotEmpty.apellido,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [apoderadoModel.apellido,apellido]; arguments []; default message [apellido]]; default message [El apellido no puede estar vacío]] [Field error in object 'apoderadoModel' on field 'sexo': rejected value [o ]; codes [Pattern.apoderadoModel.sexo,Pattern.sexo,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [apoderadoModel.sexo,sexo]; arguments []; default message [sexo],[Ljakarta.validation.constraints.Pattern$Flag;@5d1bbb7c,^[MF]$]; default message [El sexo debe ser 'M' para masculino o 'F' para femenino]] [Field error in object 'apoderadoModel' on field 'grado_instruccion': rejected value [null]; codes [NotEmpty.apoderadoModel.grado_instruccion,NotEmpty.grado_instruccion,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [apoderadoModel.grado_instruccion,grado_instruccion]; arguments []; default message [grado_instruccion]]; default message [El grado de instrucción no puede estar vacío]] ]
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes

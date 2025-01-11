@@ -19,6 +19,9 @@ public class ApoderadoModel {
     @Size(max = 100, message = "El nombre no puede superar los 100 caracteres")
     private String nombre;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 
     @NotEmpty(message = "El apellido no puede estar vacío")
     @Size(max = 100, message = "El apellido no puede superar los 100 caracteres")
@@ -48,6 +51,7 @@ public class ApoderadoModel {
     @Pattern(regexp = "^\\d{9}$", message = "El teléfono debe contener exactamente 9 dígitos")
     private String telefono;
 
+<<<<<<< Updated upstream
     @NotEmpty(message = "La dirección no puede estar Vacía")
     @Size(max = 200, message = "La dirección no puede superar los 200 caracteres")
     private String direccion;
@@ -82,6 +86,8 @@ public class ApoderadoModel {
     @Pattern(regexp = "^\\d{9}$", message = "El teléfono debe contener exactamente 9 dígitos")
     private String telefono;
 
+=======
+>>>>>>> Stashed changes
     @NotEmpty(message = "La dirección no puede estar vacía")
     @Size(max = 200, message = "La dirección no puede superar los 200 caracteres")
     private String direccion;

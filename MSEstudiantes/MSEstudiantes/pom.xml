@@ -60,6 +60,7 @@
 		</dependency>
 		<dependency>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     		<groupId>org.springframework.boot</groupId>
     		<artifactId>spring-boot-starter-validation</artifactId>
 		</dependency>
@@ -75,10 +76,15 @@
 </dependency>
 		<dependency>
 =======
+=======
+>>>>>>> Stashed changes
     			<groupId>org.springframework.boot</groupId>
     			<artifactId>spring-boot-starter-validation</artifactId>
 		</dependency>
 		<dependency>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
