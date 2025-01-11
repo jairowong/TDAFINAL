@@ -5,24 +5,53 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 
 @Entity
 @Table(name="apoderado")
 public class ApoderadoModel {
     
-    private Long id;
-    private String nombre;
-    private String apellido;
-    private String dni;
-    private int edad;
-    private String sexo;
-    private String grado_instruccion;
-    private String estado_civil;
-    private String telefono;
-    private String direccion;
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+     private Long id;
+
+    @NotEmpty(message = "El nombre no puede estar vacío")
+    @Size(max = 50, message = "El nombre no puede superar los 50 caracteres")
+    private String nombre;
+
+    @NotEmpty(message = "El apellido no puede estar vacío")
+    @Size(max = 50, message = "El apellido no puede superar los 50 caracteres")
+    private String apellido;
+
+    @NotEmpty(message = "El DNI no puede estar vacío")
+    @Size(min = 8, max = 8, message = "El DNI debe tener exactamente 8 caracteres")
+    private String dni;
+
+    @NotNull(message = "La edad es obligatoria")
+    private Integer edad;
+
+    @NotEmpty(message = "El sexo no puede estar vacío")
+    @Size(max = 1, message = "El sexo debe ser 'M' para masculino o 'F' para femenino")
+    private String sexo;
+
+    @NotEmpty(message = "El grado de instrucción no puede estar vacío")
+    @Size(max = 50, message = "El grado de instrucción no puede superar los 50 caracteres")
+    private String grado_instruccion;
+
+    @NotEmpty(message = "El estado civil no puede estar vacío")
+    @Size(max = 50, message = "El estado civil no puede superar los 50 caracteres")
+    private String estado_civil;
+
+    @NotEmpty(message = "El teléfono no puede estar vacío")
+    @Size(max = 15, message = "El teléfono no puede superar los 15 caracteres")
+    private String telefono;
+
+    @NotEmpty(message = "La dirección no puede estar vacía")
+    @Size(max = 255, message = "La dirección no puede superar los 255 caracteres")
+    private String direccion;
+   
     
     public Long getId() {
         return id;

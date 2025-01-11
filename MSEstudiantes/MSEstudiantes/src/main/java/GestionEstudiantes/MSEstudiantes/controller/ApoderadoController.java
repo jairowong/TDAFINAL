@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import GestionEstudiantes.MSEstudiantes.model.ApoderadoModel;
 import GestionEstudiantes.MSEstudiantes.router.RouterApi;
 import GestionEstudiantes.MSEstudiantes.service.ApoderadoService;
+import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping(RouterApi.APODERADO)
@@ -33,7 +34,7 @@ public class ApoderadoController {
     
 
     @PostMapping("/create")
-    public ApoderadoModel create(@RequestBody ApoderadoModel model)
+    public ApoderadoModel create(@Valid @RequestBody ApoderadoModel model)
     {   
         return apoderadoService.add(model);
     }
@@ -46,7 +47,7 @@ public class ApoderadoController {
 
     // update
     @PutMapping("/update/{id}")
-    public ApoderadoModel update(@PathVariable Long id, @RequestBody ApoderadoModel model) {
+    public ApoderadoModel update(@PathVariable Long id, @Valid @RequestBody ApoderadoModel model) {
         model.setId(id);
         return apoderadoService.update(model);
     }
