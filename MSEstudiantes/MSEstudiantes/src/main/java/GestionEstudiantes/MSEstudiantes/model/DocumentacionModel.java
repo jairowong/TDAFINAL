@@ -15,6 +15,7 @@ public class DocumentacionModel {
     private Long id;
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
     @NotEmpty(message = "El nombre no puede estar vacío")
     @Size(max = 100, message = "El nombre no puede superar los 100 caracteres")
@@ -26,6 +27,8 @@ public class DocumentacionModel {
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
     
     @NotEmpty(message = "El certificado no puede estar vacío")
     @Size(max = 10, message = "El certificado debe ser subido")
@@ -35,6 +38,9 @@ public class DocumentacionModel {
     @Size(min = 8, max = 8, message = "El DNI debe tener exactamente 8 caracteres")
         private String dni;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes

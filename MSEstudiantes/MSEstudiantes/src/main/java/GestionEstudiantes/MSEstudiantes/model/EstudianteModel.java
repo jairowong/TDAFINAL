@@ -16,6 +16,7 @@ public class EstudianteModel {
     
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     private Long id;
 
     @NotEmpty(message = "El DNI no puede estar vacío")
@@ -136,6 +137,23 @@ public class EstudianteModel {
         private String ape_paterno;
 
 >>>>>>> Stashed changes
+=======
+
+        private Long id;
+    
+        @NotEmpty(message = "El DNI no puede estar vacío")
+        @Size(min = 8, max = 8, message = "El DNI debe tener exactamente 8 caracteres")
+        private String dni;
+    
+        @NotEmpty(message = "El nombre no puede estar vacío")
+        @Size(max = 100, message = "El nombre no puede superar los 100 caracteres")
+        private String nombre;
+    
+        @NotEmpty(message = "El apellido paterno y materno no puede estar vacío")
+        @Size(max = 200, message = "El apellido paterno y materno no puede superar los 200 caracteres")
+        private String ape_paterno;
+
+>>>>>>> Stashed changes
         @NotEmpty(message = "El apellido paterno y materno no puede estar vacío")
         @Size(max = 200, message = "El apellido paterno y materno no puede superar los 200 caracteres")
         private String ape_materno;
@@ -209,6 +227,9 @@ public class EstudianteModel {
     
     
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes

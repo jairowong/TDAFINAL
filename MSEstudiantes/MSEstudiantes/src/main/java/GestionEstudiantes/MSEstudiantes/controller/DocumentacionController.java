@@ -36,7 +36,11 @@ public class DocumentacionController {
     @PostMapping("/create")
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     public DocumentacionModel create(@Valid@RequestBody DocumentacionModel model)
+=======
+    public DocumentacionModel create(@Valid @RequestBody DocumentacionModel model)
+>>>>>>> Stashed changes
 =======
     public DocumentacionModel create(@Valid @RequestBody DocumentacionModel model)
 >>>>>>> Stashed changes
