@@ -47,7 +47,7 @@ public class ApoderadoModel {
     @Pattern(regexp = "^\\d{9}$", message = "El teléfono debe contener exactamente 9 dígitos")
     private String telefono;
 
-    @NotEmpty(message = "La dirección no puede estar vacía")
+    @NotEmpty(message = "La dirección no puede estar Vacía")
     @Size(max = 200, message = "La dirección no puede superar los 200 caracteres")
     private String direccion;
 

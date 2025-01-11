@@ -37,11 +37,11 @@ public class EstudianteModel {
 
     @NotEmpty(message = "El sexo no puede estar vacío")
     @Size(max = 1, message = "El sexo debe ser 'M' para masculino o 'F' para femenino")
-
+    private String sexo;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String sexo;
+   
 
     public Long getId() {
         return id;
