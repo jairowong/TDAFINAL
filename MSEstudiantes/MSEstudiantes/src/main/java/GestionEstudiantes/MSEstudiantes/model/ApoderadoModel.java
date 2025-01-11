@@ -18,6 +18,7 @@ public class ApoderadoModel {
     @NotEmpty(message = "El nombre no puede estar vacío")
     @Size(max = 100, message = "El nombre no puede superar los 100 caracteres")
     private String nombre;
+<<<<<<< Updated upstream
 
     @NotEmpty(message = "El apellido no puede estar vacío")
     @Size(max = 100, message = "El apellido no puede superar los 100 caracteres")
@@ -50,7 +51,41 @@ public class ApoderadoModel {
     @NotEmpty(message = "La dirección no puede estar Vacía")
     @Size(max = 200, message = "La dirección no puede superar los 200 caracteres")
     private String direccion;
+=======
+>>>>>>> Stashed changes
 
+    @NotEmpty(message = "El apellido no puede estar vacío")
+    @Size(max = 100, message = "El apellido no puede superar los 100 caracteres")
+    private String apellido;
+
+    @NotEmpty(message = "El DNI no puede estar vacío")
+    @Size(min = 8, max = 8, message = "El DNI debe tener exactamente 8 caracteres")
+    private String dni;
+
+    @NotNull(message = "La edad es obligatoria")
+    private Integer edad;
+
+    @NotEmpty(message = "El sexo no puede estar vacío")
+    @Pattern(regexp = "^[MF]$", message = "El sexo debe ser 'M' para masculino o 'F' para femenino")
+    private String sexo;
+
+    @NotEmpty(message = "El grado de instrucción no puede estar vacío")
+    @Size(max = 50, message = "El grado de instrucción no puede superar los 50 caracteres")
+    private String grado_instruccion;
+
+    @NotEmpty(message = "El estado civil no puede estar vacío")
+    @Pattern(regexp = "^(Soltero|Casado|Viudo|Divorciado)$", 
+             message = "El estado civil debe ser uno de los siguientes: Soltero, Casado, Viudo, Divorciado")
+    private String estado_civil;
+
+    @NotEmpty(message = "El teléfono no puede estar vacío")
+    @Pattern(regexp = "^\\d{9}$", message = "El teléfono debe contener exactamente 9 dígitos")
+    private String telefono;
+
+    @NotEmpty(message = "La dirección no puede estar vacía")
+    @Size(max = 200, message = "La dirección no puede superar los 200 caracteres")
+    private String direccion;
+    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     

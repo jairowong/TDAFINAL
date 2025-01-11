@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 2025-01-07 18:49:45 - [restartedMain] INFO  G.M.MsEstudiantesApplication - Starting MsEstudiantesApplication using Java 17.0.9 with PID 24672 (C:\Users\walte\TDAFINAL\MSEstudiantes\MSEstudiantes\target\classes started by walte in C:\Users\walte\TDAFINAL\MSEstudiantes)
 2025-01-07 18:49:45 - [restartedMain] DEBUG G.M.MsEstudiantesApplication - Running with Spring Boot v3.4.1, Spring v6.2.1
 2025-01-07 18:49:45 - [restartedMain] INFO  G.M.MsEstudiantesApplication - No active profile set, falling back to 1 default profile: "default"
@@ -18,6 +19,28 @@
 2025-01-07 18:49:47 - [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@54f569f4
 2025-01-07 18:49:47 - [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
 2025-01-07 18:49:47 - [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+=======
+2025-01-07 17:30:39 - [restartedMain] INFO  G.M.MsEstudiantesApplication - Starting MsEstudiantesApplication using Java 17.0.9 with PID 24664 (C:\Users\walte\TDAFINAL\MSEstudiantes\MSEstudiantes\target\classes started by walte in C:\Users\walte\TDAFINAL\MSEstudiantes)
+2025-01-07 17:30:39 - [restartedMain] DEBUG G.M.MsEstudiantesApplication - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-07 17:30:39 - [restartedMain] INFO  G.M.MsEstudiantesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-07 17:30:40 - [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-07 17:30:40 - [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-07 17:30:40 - [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-07 17:30:40 - [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 53 ms. Found 3 JPA repository interfaces.
+2025-01-07 17:30:41 - [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8801 (http)
+2025-01-07 17:30:41 - [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-07 17:30:41 - [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-07 17:30:41 - [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-07 17:30:41 - [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1322 ms
+2025-01-07 17:30:41 - [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-07 17:30:41 - [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-07 17:30:41 - [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-01-07 17:30:41 - [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-07 17:30:41 - [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-01-07 17:30:42 - [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4f9ea02
+2025-01-07 17:30:42 - [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-01-07 17:30:42 - [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+>>>>>>> Stashed changes
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.0.26
@@ -25,6 +48,7 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
+<<<<<<< Updated upstream
 2025-01-07 18:49:48 - [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
 2025-01-07 18:49:48 - [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
 2025-01-07 18:49:48 - [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
@@ -140,6 +164,42 @@
 2025-01-07 18:55:36 - [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@71fdf557
 2025-01-07 18:55:36 - [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
 2025-01-07 18:55:36 - [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+=======
+2025-01-07 17:30:42 - [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-07 17:30:43 - [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-07 17:30:43 - [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-07 17:30:43 - [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-07 17:30:43 - [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8801 (http) with context path '/'
+2025-01-07 17:30:43 - [restartedMain] INFO  G.M.MsEstudiantesApplication - Started MsEstudiantesApplication in 4.327 seconds (process running for 4.624)
+2025-01-07 17:31:26 - [http-nio-8801-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-07 17:31:26 - [http-nio-8801-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-01-07 17:31:26 - [http-nio-8801-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-01-07 17:31:26 - [http-nio-8801-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character (',' (code 44)): expected a value]
+2025-01-07 17:31:45 - [http-nio-8801-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public GestionEstudiantes.MSEstudiantes.model.EstudianteModel GestionEstudiantes.MSEstudiantes.controller.EstudianteController.create(GestionEstudiantes.MSEstudiantes.model.EstudianteModel): [Field error in object 'estudianteModel' on field 'apellido': rejected value [null]; codes [NotEmpty.estudianteModel.apellido,NotEmpty.apellido,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [estudianteModel.apellido,apellido]; arguments []; default message [apellido]]; default message [El apellido no puede estar vacío]] ]
+2025-01-07 17:32:14 - [http-nio-8801-exec-8] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public GestionEstudiantes.MSEstudiantes.model.EstudianteModel GestionEstudiantes.MSEstudiantes.controller.EstudianteController.create(GestionEstudiantes.MSEstudiantes.model.EstudianteModel): [Field error in object 'estudianteModel' on field 'apellido': rejected value [null]; codes [NotEmpty.estudianteModel.apellido,NotEmpty.apellido,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [estudianteModel.apellido,apellido]; arguments []; default message [apellido]]; default message [El apellido no puede estar vacío]] ]
+2025-01-07 17:32:42 - [http-nio-8801-exec-7] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public GestionEstudiantes.MSEstudiantes.model.EstudianteModel GestionEstudiantes.MSEstudiantes.controller.EstudianteController.create(GestionEstudiantes.MSEstudiantes.model.EstudianteModel): [Field error in object 'estudianteModel' on field 'apellido': rejected value [null]; codes [NotEmpty.estudianteModel.apellido,NotEmpty.apellido,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [estudianteModel.apellido,apellido]; arguments []; default message [apellido]]; default message [El apellido no puede estar vacío]] ]
+2025-01-07 17:33:15 - [http-nio-8801-exec-10] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public GestionEstudiantes.MSEstudiantes.model.EstudianteModel GestionEstudiantes.MSEstudiantes.controller.EstudianteController.create(GestionEstudiantes.MSEstudiantes.model.EstudianteModel): [Field error in object 'estudianteModel' on field 'apellido': rejected value [null]; codes [NotEmpty.estudianteModel.apellido,NotEmpty.apellido,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [estudianteModel.apellido,apellido]; arguments []; default message [apellido]]; default message [El apellido no puede estar vacío]] ]
+2025-01-07 17:34:42 - [restartedMain] INFO  G.M.MsEstudiantesApplication - Starting MsEstudiantesApplication using Java 17.0.9 with PID 16628 (C:\Users\walte\TDAFINAL\MSEstudiantes\MSEstudiantes\target\classes started by walte in C:\Users\walte\TDAFINAL\MSEstudiantes)
+2025-01-07 17:34:42 - [restartedMain] DEBUG G.M.MsEstudiantesApplication - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-07 17:34:42 - [restartedMain] INFO  G.M.MsEstudiantesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-07 17:34:42 - [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-07 17:34:42 - [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-07 17:34:43 - [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-07 17:34:43 - [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 53 ms. Found 3 JPA repository interfaces.
+2025-01-07 17:34:44 - [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8801 (http)
+2025-01-07 17:34:44 - [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-07 17:34:44 - [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-07 17:34:44 - [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-07 17:34:44 - [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1293 ms
+2025-01-07 17:34:44 - [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-07 17:34:44 - [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-07 17:34:44 - [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-01-07 17:34:44 - [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-07 17:34:44 - [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-01-07 17:34:45 - [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@234235f9
+2025-01-07 17:34:45 - [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-01-07 17:34:45 - [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+>>>>>>> Stashed changes
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.0.26
@@ -147,6 +207,7 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
+<<<<<<< Updated upstream
 2025-01-07 18:55:37 - [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
 2025-01-07 18:55:37 - [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
 2025-01-07 18:55:37 - [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
@@ -179,6 +240,38 @@
 2025-01-07 18:59:47 - [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@45542d23
 2025-01-07 18:59:47 - [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
 2025-01-07 18:59:47 - [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+=======
+2025-01-07 17:34:45 - [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-07 17:34:45 - [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-07 17:34:46 - [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-07 17:34:46 - [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-07 17:34:46 - [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8801 (http) with context path '/'
+2025-01-07 17:34:46 - [restartedMain] INFO  G.M.MsEstudiantesApplication - Started MsEstudiantesApplication in 4.329 seconds (process running for 4.647)
+2025-01-07 17:34:51 - [http-nio-8801-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-07 17:34:51 - [http-nio-8801-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-01-07 17:34:51 - [http-nio-8801-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-01-07 17:34:51 - [http-nio-8801-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public GestionEstudiantes.MSEstudiantes.model.EstudianteModel GestionEstudiantes.MSEstudiantes.controller.EstudianteController.create(GestionEstudiantes.MSEstudiantes.model.EstudianteModel) with 2 errors: [Field error in object 'estudianteModel' on field 'apellido': rejected value [null]; codes [NotEmpty.estudianteModel.apellido,NotEmpty.apellido,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [estudianteModel.apellido,apellido]; arguments []; default message [apellido]]; default message [El apellido no puede estar vacío]] [Field error in object 'estudianteModel' on field 'nombre': rejected value []; codes [NotEmpty.estudianteModel.nombre,NotEmpty.nombre,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [estudianteModel.nombre,nombre]; arguments []; default message [nombre]]; default message [El nombre no puede estar vacío]] ]
+2025-01-07 17:38:10 - [restartedMain] INFO  G.M.MsEstudiantesApplication - Starting MsEstudiantesApplication using Java 17.0.9 with PID 3448 (C:\Users\walte\TDAFINAL\MSEstudiantes\MSEstudiantes\target\classes started by walte in C:\Users\walte\TDAFINAL\MSEstudiantes)
+2025-01-07 17:38:10 - [restartedMain] DEBUG G.M.MsEstudiantesApplication - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-07 17:38:10 - [restartedMain] INFO  G.M.MsEstudiantesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-07 17:38:11 - [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-07 17:38:11 - [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-07 17:38:11 - [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-07 17:38:11 - [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 70 ms. Found 3 JPA repository interfaces.
+2025-01-07 17:38:12 - [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8801 (http)
+2025-01-07 17:38:12 - [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-07 17:38:12 - [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-07 17:38:12 - [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-07 17:38:12 - [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1227 ms
+2025-01-07 17:38:12 - [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-07 17:38:12 - [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-07 17:38:12 - [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-01-07 17:38:12 - [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-07 17:38:12 - [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-01-07 17:38:13 - [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6af86c05
+2025-01-07 17:38:13 - [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-01-07 17:38:13 - [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+>>>>>>> Stashed changes
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.0.26
@@ -186,6 +279,7 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
+<<<<<<< Updated upstream
 2025-01-07 18:59:47 - [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
 2025-01-07 18:59:47 - [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
 2025-01-07 18:59:48 - [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
@@ -202,3 +296,315 @@
 2025-01-07 19:02:43 - [Thread-5] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2025-01-07 19:02:43 - [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2025-01-07 19:02:43 - [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+=======
+2025-01-07 17:38:13 - [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-07 17:38:14 - [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-07 17:38:14 - [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-07 17:38:14 - [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-07 17:38:14 - [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8801 (http) with context path '/'
+2025-01-07 17:38:14 - [restartedMain] INFO  G.M.MsEstudiantesApplication - Started MsEstudiantesApplication in 4.387 seconds (process running for 4.664)
+2025-01-07 17:38:19 - [http-nio-8801-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-07 17:38:19 - [http-nio-8801-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-01-07 17:38:19 - [http-nio-8801-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-01-07 17:44:19 - [restartedMain] INFO  G.M.MsEstudiantesApplication - Starting MsEstudiantesApplication using Java 17.0.9 with PID 22920 (C:\Users\walte\TDAFINAL\MSEstudiantes\MSEstudiantes\target\classes started by walte in C:\Users\walte\TDAFINAL\MSEstudiantes)
+2025-01-07 17:44:19 - [restartedMain] DEBUG G.M.MsEstudiantesApplication - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-07 17:44:19 - [restartedMain] INFO  G.M.MsEstudiantesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-07 17:44:19 - [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-07 17:44:19 - [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-07 17:44:20 - [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-07 17:44:20 - [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 57 ms. Found 3 JPA repository interfaces.
+2025-01-07 17:44:21 - [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8801 (http)
+2025-01-07 17:44:21 - [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-07 17:44:21 - [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-07 17:44:21 - [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-07 17:44:21 - [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1312 ms
+2025-01-07 17:44:21 - [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-07 17:44:21 - [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-07 17:44:21 - [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-01-07 17:44:21 - [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-07 17:44:21 - [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-01-07 17:44:22 - [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5e7bed91
+2025-01-07 17:44:22 - [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-01-07 17:44:22 - [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.26
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-07 17:44:22 - [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-07 17:44:23 - [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-07 17:44:23 - [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-07 17:44:23 - [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-07 17:44:23 - [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8801 (http) with context path '/'
+2025-01-07 17:44:23 - [restartedMain] INFO  G.M.MsEstudiantesApplication - Started MsEstudiantesApplication in 4.361 seconds (process running for 4.653)
+2025-01-07 17:44:42 - [http-nio-8801-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-07 17:44:42 - [http-nio-8801-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-01-07 17:44:42 - [http-nio-8801-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-01-07 17:44:42 - [http-nio-8801-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public GestionEstudiantes.MSEstudiantes.model.EstudianteModel GestionEstudiantes.MSEstudiantes.controller.EstudianteController.create(GestionEstudiantes.MSEstudiantes.model.EstudianteModel): [Field error in object 'estudianteModel' on field 'dni': rejected value [1234567855555]; codes [Size.estudianteModel.dni,Size.dni,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [estudianteModel.dni,dni]; arguments []; default message [dni],8,8]; default message [El DNI debe tener exactamente 8 caracteres]] ]
+2025-01-07 17:48:29 - [restartedMain] INFO  G.M.MsEstudiantesApplication - Starting MsEstudiantesApplication using Java 17.0.9 with PID 16260 (C:\Users\walte\TDAFINAL\MSEstudiantes\MSEstudiantes\target\classes started by walte in C:\Users\walte\TDAFINAL\MSEstudiantes)
+2025-01-07 17:48:29 - [restartedMain] DEBUG G.M.MsEstudiantesApplication - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-07 17:48:29 - [restartedMain] INFO  G.M.MsEstudiantesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-07 17:48:30 - [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-07 17:48:30 - [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-07 17:48:30 - [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-07 17:48:30 - [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 57 ms. Found 3 JPA repository interfaces.
+2025-01-07 17:48:31 - [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8801 (http)
+2025-01-07 17:48:31 - [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-07 17:48:31 - [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-07 17:48:31 - [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-07 17:48:31 - [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1276 ms
+2025-01-07 17:48:31 - [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-07 17:48:31 - [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-07 17:48:31 - [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-01-07 17:48:31 - [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-07 17:48:31 - [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-01-07 17:48:32 - [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@408a673c
+2025-01-07 17:48:32 - [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-01-07 17:48:32 - [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.26
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-07 17:48:32 - [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-07 17:48:32 - [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-07 17:48:33 - [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-07 17:48:33 - [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-07 17:48:33 - [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8801 (http) with context path '/'
+2025-01-07 17:48:33 - [restartedMain] INFO  G.M.MsEstudiantesApplication - Started MsEstudiantesApplication in 4.183 seconds (process running for 4.484)
+2025-01-07 17:48:39 - [http-nio-8801-exec-4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-07 17:48:39 - [http-nio-8801-exec-4] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-01-07 17:48:39 - [http-nio-8801-exec-4] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-01-07 17:53:24 - [restartedMain] INFO  G.M.MsEstudiantesApplication - Starting MsEstudiantesApplication using Java 17.0.9 with PID 14864 (C:\Users\walte\TDAFINAL\MSEstudiantes\MSEstudiantes\target\classes started by walte in C:\Users\walte\TDAFINAL\MSEstudiantes)
+2025-01-07 17:53:24 - [restartedMain] DEBUG G.M.MsEstudiantesApplication - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-07 17:53:24 - [restartedMain] INFO  G.M.MsEstudiantesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-07 17:53:24 - [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-07 17:53:24 - [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-07 17:53:24 - [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-07 17:53:25 - [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 51 ms. Found 3 JPA repository interfaces.
+2025-01-07 17:53:25 - [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8801 (http)
+2025-01-07 17:53:25 - [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-07 17:53:25 - [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-07 17:53:25 - [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-07 17:53:25 - [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1307 ms
+2025-01-07 17:53:26 - [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-07 17:53:26 - [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-07 17:53:26 - [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-01-07 17:53:26 - [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-07 17:53:26 - [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-01-07 17:53:26 - [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@36552479
+2025-01-07 17:53:26 - [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-01-07 17:53:26 - [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.26
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-07 17:53:27 - [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-07 17:53:27 - [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-07 17:53:27 - [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-07 17:53:28 - [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-07 17:53:28 - [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8801 (http) with context path '/'
+2025-01-07 17:53:28 - [restartedMain] INFO  G.M.MsEstudiantesApplication - Started MsEstudiantesApplication in 4.178 seconds (process running for 4.476)
+2025-01-07 17:53:57 - [http-nio-8801-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-07 17:53:57 - [http-nio-8801-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-01-07 17:53:57 - [http-nio-8801-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-01-07 17:53:58 - [http-nio-8801-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public GestionEstudiantes.MSEstudiantes.model.EstudianteModel GestionEstudiantes.MSEstudiantes.controller.EstudianteController.create(GestionEstudiantes.MSEstudiantes.model.EstudianteModel): [Field error in object 'estudianteModel' on field 'dni': rejected value [123456789]; codes [Size.estudianteModel.dni,Size.dni,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [estudianteModel.dni,dni]; arguments []; default message [dni],8,8]; default message [El DNI debe tener exactamente 8 caracteres]] ]
+2025-01-07 17:59:16 - [restartedMain] INFO  G.M.MsEstudiantesApplication - Starting MsEstudiantesApplication using Java 17.0.9 with PID 24724 (C:\Users\walte\TDAFINAL\MSEstudiantes\MSEstudiantes\target\classes started by walte in C:\Users\walte\TDAFINAL\MSEstudiantes)
+2025-01-07 17:59:16 - [restartedMain] DEBUG G.M.MsEstudiantesApplication - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-07 17:59:16 - [restartedMain] INFO  G.M.MsEstudiantesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-07 17:59:16 - [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-07 17:59:16 - [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-07 17:59:16 - [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-07 17:59:16 - [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 52 ms. Found 3 JPA repository interfaces.
+2025-01-07 17:59:17 - [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8801 (http)
+2025-01-07 17:59:17 - [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-07 17:59:17 - [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-07 17:59:17 - [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-07 17:59:17 - [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1210 ms
+2025-01-07 17:59:17 - [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-07 17:59:17 - [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-07 17:59:17 - [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-01-07 17:59:18 - [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-07 17:59:18 - [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-01-07 17:59:18 - [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@36552479
+2025-01-07 17:59:18 - [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-01-07 17:59:18 - [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.26
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-07 17:59:18 - [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-07 17:59:18 - [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-07 17:59:19 - [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-07 17:59:19 - [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-07 17:59:19 - [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8801 (http) with context path '/'
+2025-01-07 17:59:19 - [restartedMain] INFO  G.M.MsEstudiantesApplication - Started MsEstudiantesApplication in 4.067 seconds (process running for 4.368)
+2025-01-07 17:59:28 - [http-nio-8801-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-07 17:59:28 - [http-nio-8801-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-01-07 17:59:28 - [http-nio-8801-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-01-07 17:59:28 - [http-nio-8801-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public GestionEstudiantes.MSEstudiantes.model.EstudianteModel GestionEstudiantes.MSEstudiantes.controller.EstudianteController.create(GestionEstudiantes.MSEstudiantes.model.EstudianteModel): [Field error in object 'estudianteModel' on field 'dni': rejected value [123456789]; codes [Size.estudianteModel.dni,Size.dni,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [estudianteModel.dni,dni]; arguments []; default message [dni],8,8]; default message [El DNI debe tener exactamente 8 caracteres]] ]
+2025-01-07 17:59:35 - [http-nio-8801-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public GestionEstudiantes.MSEstudiantes.model.EstudianteModel GestionEstudiantes.MSEstudiantes.controller.EstudianteController.create(GestionEstudiantes.MSEstudiantes.model.EstudianteModel): [Field error in object 'estudianteModel' on field 'dni': rejected value [1234567]; codes [Size.estudianteModel.dni,Size.dni,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [estudianteModel.dni,dni]; arguments []; default message [dni],8,8]; default message [El DNI debe tener exactamente 8 caracteres]] ]
+2025-01-07 18:00:19 - [http-nio-8801-exec-8] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character (',' (code 44)): expected a value]
+2025-01-07 18:00:36 - [http-nio-8801-exec-10] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public GestionEstudiantes.MSEstudiantes.model.EstudianteModel GestionEstudiantes.MSEstudiantes.controller.EstudianteController.create(GestionEstudiantes.MSEstudiantes.model.EstudianteModel): [Field error in object 'estudianteModel' on field 'edad': rejected value [null]; codes [NotNull.estudianteModel.edad,NotNull.edad,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [estudianteModel.edad,edad]; arguments []; default message [edad]]; default message [La edad es obligatoria]] ]
+2025-01-07 18:01:56 - [restartedMain] INFO  G.M.MsEstudiantesApplication - Starting MsEstudiantesApplication using Java 17.0.9 with PID 14868 (C:\Users\walte\TDAFINAL\MSEstudiantes\MSEstudiantes\target\classes started by walte in C:\Users\walte\TDAFINAL\MSEstudiantes)
+2025-01-07 18:01:56 - [restartedMain] DEBUG G.M.MsEstudiantesApplication - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-07 18:01:56 - [restartedMain] INFO  G.M.MsEstudiantesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-07 18:01:56 - [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-07 18:01:56 - [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-07 18:01:56 - [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-07 18:01:57 - [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 58 ms. Found 3 JPA repository interfaces.
+2025-01-07 18:01:57 - [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8801 (http)
+2025-01-07 18:01:57 - [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-07 18:01:57 - [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-07 18:01:57 - [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-07 18:01:57 - [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1264 ms
+2025-01-07 18:01:57 - [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-07 18:01:58 - [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-07 18:01:58 - [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-01-07 18:01:58 - [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-07 18:01:58 - [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-01-07 18:01:58 - [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@73d37064
+2025-01-07 18:01:58 - [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-01-07 18:01:58 - [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.26
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-07 18:01:59 - [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-07 18:01:59 - [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-07 18:01:59 - [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-07 18:02:00 - [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-07 18:02:00 - [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8801 (http) with context path '/'
+2025-01-07 18:02:00 - [restartedMain] INFO  G.M.MsEstudiantesApplication - Started MsEstudiantesApplication in 4.187 seconds (process running for 4.501)
+2025-01-07 18:02:03 - [http-nio-8801-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-07 18:02:03 - [http-nio-8801-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-01-07 18:02:03 - [http-nio-8801-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-01-07 18:02:03 - [http-nio-8801-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public GestionEstudiantes.MSEstudiantes.model.EstudianteModel GestionEstudiantes.MSEstudiantes.controller.EstudianteController.create(GestionEstudiantes.MSEstudiantes.model.EstudianteModel) with 2 errors: [Field error in object 'estudianteModel' on field 'edad': rejected value [null]; codes [NotNull.estudianteModel.edad,NotNull.edad,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [estudianteModel.edad,edad]; arguments []; default message [edad]]; default message [La edad es obligatoria]] [Field error in object 'estudianteModel' on field 'sexo': rejected value [lll ]; codes [Size.estudianteModel.sexo,Size.sexo,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [estudianteModel.sexo,sexo]; arguments []; default message [sexo],1,0]; default message [El sexo debe ser 'M' para masculino o 'F' para femenino]] ]
+2025-01-07 18:02:13 - [http-nio-8801-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public GestionEstudiantes.MSEstudiantes.model.EstudianteModel GestionEstudiantes.MSEstudiantes.controller.EstudianteController.create(GestionEstudiantes.MSEstudiantes.model.EstudianteModel) with 3 errors: [Field error in object 'estudianteModel' on field 'sexo': rejected value [lll ]; codes [Size.estudianteModel.sexo,Size.sexo,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [estudianteModel.sexo,sexo]; arguments []; default message [sexo],1,0]; default message [El sexo debe ser 'M' para masculino o 'F' para femenino]] [Field error in object 'estudianteModel' on field 'dni': rejected value [123456789]; codes [Size.estudianteModel.dni,Size.dni,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [estudianteModel.dni,dni]; arguments []; default message [dni],8,8]; default message [El DNI debe tener exactamente 8 caracteres]] [Field error in object 'estudianteModel' on field 'edad': rejected value [null]; codes [NotNull.estudianteModel.edad,NotNull.edad,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [estudianteModel.edad,edad]; arguments []; default message [edad]]; default message [La edad es obligatoria]] ]
+2025-01-07 18:02:27 - [http-nio-8801-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public GestionEstudiantes.MSEstudiantes.model.EstudianteModel GestionEstudiantes.MSEstudiantes.controller.EstudianteController.create(GestionEstudiantes.MSEstudiantes.model.EstudianteModel) with 3 errors: [Field error in object 'estudianteModel' on field 'edad': rejected value [null]; codes [NotNull.estudianteModel.edad,NotNull.edad,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [estudianteModel.edad,edad]; arguments []; default message [edad]]; default message [La edad es obligatoria]] [Field error in object 'estudianteModel' on field 'dni': rejected value [123456789]; codes [Size.estudianteModel.dni,Size.dni,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [estudianteModel.dni,dni]; arguments []; default message [dni],8,8]; default message [El DNI debe tener exactamente 8 caracteres]] [Field error in object 'estudianteModel' on field 'sexo': rejected value [o ]; codes [Size.estudianteModel.sexo,Size.sexo,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [estudianteModel.sexo,sexo]; arguments []; default message [sexo],1,0]; default message [El sexo debe ser 'M' para masculino o 'F' para femenino]] ]
+2025-01-07 18:03:15 - [restartedMain] INFO  G.M.MsEstudiantesApplication - Starting MsEstudiantesApplication using Java 17.0.9 with PID 18052 (C:\Users\walte\TDAFINAL\MSEstudiantes\MSEstudiantes\target\classes started by walte in C:\Users\walte\TDAFINAL\MSEstudiantes)
+2025-01-07 18:03:15 - [restartedMain] DEBUG G.M.MsEstudiantesApplication - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-07 18:03:15 - [restartedMain] INFO  G.M.MsEstudiantesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-07 18:03:15 - [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-07 18:03:15 - [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-07 18:03:16 - [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-07 18:03:16 - [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 63 ms. Found 3 JPA repository interfaces.
+2025-01-07 18:03:16 - [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8801 (http)
+2025-01-07 18:03:16 - [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-07 18:03:16 - [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-07 18:03:16 - [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-07 18:03:16 - [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1268 ms
+2025-01-07 18:03:17 - [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-07 18:03:17 - [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-07 18:03:17 - [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-01-07 18:03:17 - [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-07 18:03:17 - [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-01-07 18:03:17 - [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3fc109d4
+2025-01-07 18:03:17 - [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-01-07 18:03:17 - [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.26
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-07 18:03:18 - [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-07 18:03:18 - [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-07 18:03:18 - [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-07 18:03:19 - [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-07 18:03:19 - [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8801 (http) with context path '/'
+2025-01-07 18:03:19 - [restartedMain] INFO  G.M.MsEstudiantesApplication - Started MsEstudiantesApplication in 4.249 seconds (process running for 4.568)
+2025-01-07 18:03:22 - [http-nio-8801-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-07 18:03:22 - [http-nio-8801-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-01-07 18:03:22 - [http-nio-8801-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-01-07 18:03:22 - [http-nio-8801-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public GestionEstudiantes.MSEstudiantes.model.EstudianteModel GestionEstudiantes.MSEstudiantes.controller.EstudianteController.create(GestionEstudiantes.MSEstudiantes.model.EstudianteModel) with 3 errors: [Field error in object 'estudianteModel' on field 'dni': rejected value [123456789]; codes [Size.estudianteModel.dni,Size.dni,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [estudianteModel.dni,dni]; arguments []; default message [dni],8,8]; default message [El DNI debe tener exactamente 8 caracteres]] [Field error in object 'estudianteModel' on field 'edad': rejected value [null]; codes [NotNull.estudianteModel.edad,NotNull.edad,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [estudianteModel.edad,edad]; arguments []; default message [edad]]; default message [La edad es obligatoria]] [Field error in object 'estudianteModel' on field 'sexo': rejected value [o ]; codes [Size.estudianteModel.sexo,Size.sexo,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [estudianteModel.sexo,sexo]; arguments []; default message [sexo],1,0]; default message [El sexo debe ser 'M' para masculino o 'F' para femenino]] ]
+2025-01-07 18:04:03 - [http-nio-8801-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public GestionEstudiantes.MSEstudiantes.model.EstudianteModel GestionEstudiantes.MSEstudiantes.controller.EstudianteController.create(GestionEstudiantes.MSEstudiantes.model.EstudianteModel) with 6 errors: [Field error in object 'estudianteModel' on field 'sexo': rejected value [o ]; codes [Size.estudianteModel.sexo,Size.sexo,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [estudianteModel.sexo,sexo]; arguments []; default message [sexo],1,0]; default message [El sexo debe ser 'M' para masculino o 'F' para femenino]] [Field error in object 'estudianteModel' on field 'nombre': rejected value []; codes [NotEmpty.estudianteModel.nombre,NotEmpty.nombre,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [estudianteModel.nombre,nombre]; arguments []; default message [nombre]]; default message [El nombre no puede estar vacío]] [Field error in object 'estudianteModel' on field 'edad': rejected value [null]; codes [NotNull.estudianteModel.edad,NotNull.edad,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [estudianteModel.edad,edad]; arguments []; default message [edad]]; default message [La edad es obligatoria]] [Field error in object 'estudianteModel' on field 'ape_paterno': rejected value []; codes [NotEmpty.estudianteModel.ape_paterno,NotEmpty.ape_paterno,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [estudianteModel.ape_paterno,ape_paterno]; arguments []; default message [ape_paterno]]; default message [El apellido paterno y materno no puede estar vacío]] [Field error in object 'estudianteModel' on field 'ape_materno': rejected value []; codes [NotEmpty.estudianteModel.ape_materno,NotEmpty.ape_materno,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [estudianteModel.ape_materno,ape_materno]; arguments []; default message [ape_materno]]; default message [El apellido paterno y materno no puede estar vacío]] [Field error in object 'estudianteModel' on field 'dni': rejected value [123456789]; codes [Size.estudianteModel.dni,Size.dni,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [estudianteModel.dni,dni]; arguments []; default message [dni],8,8]; default message [El DNI debe tener exactamente 8 caracteres]] ]
+2025-01-07 18:12:25 - [restartedMain] INFO  G.M.MsEstudiantesApplication - Starting MsEstudiantesApplication using Java 17.0.9 with PID 15768 (C:\Users\walte\TDAFINAL\MSEstudiantes\MSEstudiantes\target\classes started by walte in C:\Users\walte\TDAFINAL\MSEstudiantes)
+2025-01-07 18:12:25 - [restartedMain] DEBUG G.M.MsEstudiantesApplication - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-07 18:12:25 - [restartedMain] INFO  G.M.MsEstudiantesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-07 18:12:25 - [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-07 18:12:25 - [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-07 18:12:26 - [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-07 18:12:26 - [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 59 ms. Found 3 JPA repository interfaces.
+2025-01-07 18:12:26 - [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8801 (http)
+2025-01-07 18:12:26 - [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-07 18:12:26 - [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-07 18:12:27 - [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-07 18:12:27 - [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1269 ms
+2025-01-07 18:12:27 - [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-07 18:12:27 - [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-07 18:12:27 - [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-01-07 18:12:27 - [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-07 18:12:27 - [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-01-07 18:12:27 - [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2508e95e
+2025-01-07 18:12:27 - [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-01-07 18:12:27 - [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.26
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-07 18:12:28 - [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-07 18:12:28 - [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-07 18:12:29 - [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-07 18:12:29 - [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-07 18:12:29 - [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8801 (http) with context path '/'
+2025-01-07 18:12:29 - [restartedMain] INFO  G.M.MsEstudiantesApplication - Started MsEstudiantesApplication in 4.296 seconds (process running for 4.595)
+2025-01-07 18:12:32 - [http-nio-8801-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-07 18:12:32 - [http-nio-8801-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-01-07 18:12:32 - [http-nio-8801-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-01-07 18:13:34 - [http-nio-8801-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public GestionEstudiantes.MSEstudiantes.model.DocumentacionModel GestionEstudiantes.MSEstudiantes.controller.DocumentacionController.create(GestionEstudiantes.MSEstudiantes.model.DocumentacionModel) with 2 errors: [Field error in object 'documentacionModel' on field 'certificado': rejected value []; codes [NotEmpty.documentacionModel.certificado,NotEmpty.certificado,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [documentacionModel.certificado,certificado]; arguments []; default message [certificado]]; default message [El certificado no puede estar vacío]] [Field error in object 'documentacionModel' on field 'dni': rejected value [123456789]; codes [Size.documentacionModel.dni,Size.dni,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [documentacionModel.dni,dni]; arguments []; default message [dni],8,8]; default message [El DNI debe tener exactamente 8 caracteres]] ]
+2025-01-07 18:20:07 - [restartedMain] INFO  G.M.MsEstudiantesApplication - Starting MsEstudiantesApplication using Java 17.0.9 with PID 8448 (C:\Users\walte\TDAFINAL\MSEstudiantes\MSEstudiantes\target\classes started by walte in C:\Users\walte\TDAFINAL\MSEstudiantes)
+2025-01-07 18:20:07 - [restartedMain] DEBUG G.M.MsEstudiantesApplication - Running with Spring Boot v3.4.1, Spring v6.2.1
+2025-01-07 18:20:07 - [restartedMain] INFO  G.M.MsEstudiantesApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-07 18:20:07 - [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-07 18:20:07 - [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-07 18:20:07 - [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-07 18:20:08 - [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 58 ms. Found 3 JPA repository interfaces.
+2025-01-07 18:20:08 - [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8801 (http)
+2025-01-07 18:20:08 - [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-07 18:20:08 - [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-07 18:20:08 - [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-07 18:20:08 - [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1394 ms
+2025-01-07 18:20:08 - [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-07 18:20:08 - [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-07 18:20:09 - [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-01-07 18:20:09 - [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-07 18:20:09 - [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-01-07 18:20:09 - [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5570c642
+2025-01-07 18:20:09 - [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-01-07 18:20:09 - [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.26
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-07 18:20:10 - [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-07 18:20:10 - [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-07 18:20:11 - [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-07 18:20:11 - [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-07 18:20:11 - [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8801 (http) with context path '/'
+2025-01-07 18:20:11 - [restartedMain] INFO  G.M.MsEstudiantesApplication - Started MsEstudiantesApplication in 5.038 seconds (process running for 5.379)
+2025-01-07 18:20:15 - [http-nio-8801-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-07 18:20:15 - [http-nio-8801-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-01-07 18:20:15 - [http-nio-8801-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2025-01-07 18:23:37 - [http-nio-8801-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public GestionEstudiantes.MSEstudiantes.model.ApoderadoModel GestionEstudiantes.MSEstudiantes.controller.ApoderadoController.create(GestionEstudiantes.MSEstudiantes.model.ApoderadoModel) with 9 errors: [Field error in object 'apoderadoModel' on field 'estado_civil': rejected value [null]; codes [NotEmpty.apoderadoModel.estado_civil,NotEmpty.estado_civil,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [apoderadoModel.estado_civil,estado_civil]; arguments []; default message [estado_civil]]; default message [El estado civil no puede estar vacío]] [Field error in object 'apoderadoModel' on field 'nombre': rejected value []; codes [NotEmpty.apoderadoModel.nombre,NotEmpty.nombre,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [apoderadoModel.nombre,nombre]; arguments []; default message [nombre]]; default message [El nombre no puede estar vacío]] [Field error in object 'apoderadoModel' on field 'dni': rejected value [123456789]; codes [Size.apoderadoModel.dni,Size.dni,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [apoderadoModel.dni,dni]; arguments []; default message [dni],8,8]; default message [El DNI debe tener exactamente 8 caracteres]] [Field error in object 'apoderadoModel' on field 'direccion': rejected value []; codes [NotEmpty.apoderadoModel.direccion,NotEmpty.direccion,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [apoderadoModel.direccion,direccion]; arguments []; default message [direccion]]; default message [La dirección no puede estar vacía]] [Field error in object 'apoderadoModel' on field 'telefono': rejected value []; codes [NotEmpty.apoderadoModel.telefono,NotEmpty.telefono,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [apoderadoModel.telefono,telefono]; arguments []; default message [telefono]]; default message [El teléfono no puede estar vacío]] [Field error in object 'apoderadoModel' on field 'telefono': rejected value []; codes [Pattern.apoderadoModel.telefono,Pattern.telefono,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [apoderadoModel.telefono,telefono]; arguments []; default message [telefono],[Ljakarta.validation.constraints.Pattern$Flag;@5d1bbb7c,^\d{9}$]; default message [El teléfono debe contener exactamente 9 dígitos]] [Field error in object 'apoderadoModel' on field 'apellido': rejected value []; codes [NotEmpty.apoderadoModel.apellido,NotEmpty.apellido,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [apoderadoModel.apellido,apellido]; arguments []; default message [apellido]]; default message [El apellido no puede estar vacío]] [Field error in object 'apoderadoModel' on field 'sexo': rejected value [o ]; codes [Pattern.apoderadoModel.sexo,Pattern.sexo,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [apoderadoModel.sexo,sexo]; arguments []; default message [sexo],[Ljakarta.validation.constraints.Pattern$Flag;@5d1bbb7c,^[MF]$]; default message [El sexo debe ser 'M' para masculino o 'F' para femenino]] [Field error in object 'apoderadoModel' on field 'grado_instruccion': rejected value [null]; codes [NotEmpty.apoderadoModel.grado_instruccion,NotEmpty.grado_instruccion,NotEmpty.java.lang.String,NotEmpty]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [apoderadoModel.grado_instruccion,grado_instruccion]; arguments []; default message [grado_instruccion]]; default message [El grado de instrucción no puede estar vacío]] ]
+>>>>>>> Stashed changes

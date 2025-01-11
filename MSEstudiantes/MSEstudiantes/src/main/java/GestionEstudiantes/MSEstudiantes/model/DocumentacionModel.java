@@ -13,6 +13,7 @@ import jakarta.validation.constraints.Size;
 public class DocumentacionModel {
     
     private Long id;
+<<<<<<< Updated upstream
 
     @NotEmpty(message = "El nombre no puede estar vacío")
     @Size(max = 100, message = "El nombre no puede superar los 100 caracteres")
@@ -21,6 +22,16 @@ public class DocumentacionModel {
     @NotEmpty(message = "El DNI no puede estar vacío")
     @Size(min = 8, max = 8, message = "El DNI debe tener exactamente 8 caracteres")
     private String dni;
+=======
+    
+    @NotEmpty(message = "El certificado no puede estar vacío")
+    @Size(max = 10, message = "El certificado debe ser subido")
+     private String certificado;
+
+    @NotEmpty(message = "El DNI no puede estar vacío")
+    @Size(min = 8, max = 8, message = "El DNI debe tener exactamente 8 caracteres")
+        private String dni;
+>>>>>>> Stashed changes
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
