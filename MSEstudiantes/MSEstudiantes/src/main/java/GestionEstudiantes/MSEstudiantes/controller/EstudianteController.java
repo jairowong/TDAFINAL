@@ -2,8 +2,8 @@ package GestionEstudiantes.MSEstudiantes.controller;
 
 import java.util.List;
 
-import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -13,10 +13,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-
 import GestionEstudiantes.MSEstudiantes.model.EstudianteModel;
 import GestionEstudiantes.MSEstudiantes.service.EstudianteService;
-import jakarta.validation.Valid;
 import GestionEstudiantes.MSEstudiantes.router.RouterApi;
 
 @RestController
@@ -30,8 +28,8 @@ public class EstudianteController {
     @GetMapping("/findAll")
     public List<EstudianteModel> FindAll()
     {
-        
-        return estudianteService.findAll();
+        List<EstudianteModel> lista = estudianteService.findAll();
+        return lista;
     }
     
 
