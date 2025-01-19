@@ -19,10 +19,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import GestionMatricula.MSMatricula.model.Solicitud;
 import GestionMatricula.MSMatricula.service.SolicitudServiceIpm;
-import GestionMatricula.Solicitu_Matricula.route.Ruta;
+
 
 @RestController
-@RequestMapping(Ruta.Api)
+@RequestMapping()
 
 public class SolicitudController {
 
@@ -31,7 +31,7 @@ public class SolicitudController {
     @Autowired
     SolicitudServiceIpm servicioIpm;
 
-    @GetMapping(Ruta.ListaSolicitud)
+    @GetMapping()
     public ResponseEntity<List<Solicitud>> mostrarSolitudes(){
         
 
@@ -50,7 +50,7 @@ public class SolicitudController {
 
     }
 
-    @GetMapping(Ruta.BuscarSolicitudid)
+    @GetMapping()
 
     public ResponseEntity<?> mostrarSolicitudes(@PathVariable Integer id){
 
@@ -70,7 +70,7 @@ public class SolicitudController {
 
     }
 
-    @PostMapping(Ruta.CrearSolicitud)
+    @PostMapping()
 
     public ResponseEntity<?> crearSolicitudes(@RequestBody Solicitud soli){
         try {
@@ -85,7 +85,7 @@ public class SolicitudController {
         }
     }
 
-    @PutMapping(Ruta.ModificarSolicitud)
+    @PutMapping()
 
     public ResponseEntity<?> modificarSolicitudes(@PathVariable Integer id, @RequestBody Solicitud soli){
 
@@ -113,7 +113,7 @@ public class SolicitudController {
 
     }
 
-    @DeleteMapping(Ruta.EliminarSolicitud)
+    @DeleteMapping()
 
         public ResponseEntity<String> eliminarSolicitudes (@PathVariable Integer id){
 

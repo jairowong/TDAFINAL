@@ -4,13 +4,13 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import GestionMatricula.MSMatricula.model.Matricula;
+import GestionMatricula.MSMatricula.model.ModelMatricula;
 
 @Service
 public interface MatriculaImp {
-    public List<Matricula> mostrarMatricula();
-    public Matricula mostrarMatriId(Integer id);
-    public Matricula crearMatri(Matricula matricula);
-    public Matricula modificarMatri(Matricula matricula);
+    public List<ModelMatricula> mostrarMatricula();
+    public ModelMatricula mostrarMatriId(Integer id);
+    public ModelMatricula crearMatri(ModelMatricula matricula);
+    public ModelMatricula modificarMatri(ModelMatricula matricula);
     public boolean eliminarMatri(Integer id);
 }

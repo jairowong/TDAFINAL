@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import GestionMatricula.MSMatricula.model.Matricula;
+import GestionMatricula.MSMatricula.model.ModelMatricula;
 import GestionMatricula.MSMatricula.repositorio.MatriculaRepository;
 
 @Service
@@ -15,22 +15,22 @@ public class IMatricula implements MatriculaImp {
     MatriculaRepository matriculaRepository;
 
     @Override
-    public List<Matricula> mostrarMatricula() {
-       return (List<Matricula>) matriculaRepository.findAll();
+    public List<ModelMatricula> mostrarMatricula() {
+       return (List<ModelMatricula>) matriculaRepository.findAll();
     }
 
     @Override
-    public Matricula mostrarMatriId(Integer id) {
+    public ModelMatricula mostrarMatriId(Integer id) {
        return matriculaRepository.findById(id).orElse(null);
     }
 
     @Override
-    public Matricula crearMatri(Matricula matricula) {
+    public ModelMatricula crearMatri(ModelMatricula matricula) {
        return matriculaRepository.save(matricula);
     }
 
     @Override
-    public Matricula modificarMatri(Matricula matricula) {
+    public ModelMatricula modificarMatri(ModelMatricula matricula) {
         return matriculaRepository.save(matricula);
     }
 
