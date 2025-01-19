@@ -3,6 +3,7 @@ package GestionEstudiantes.MSEstudiantes.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -33,7 +34,7 @@ public class EstudianteController {
     
 
     @PostMapping("/create")
-    public EstudianteModel create(@RequestBody EstudianteModel model)
+    public EstudianteModel create(@Valid @RequestBody EstudianteModel model)
     {   
         return estudianteService.add(model);
     }
@@ -46,7 +47,7 @@ public class EstudianteController {
 
     // update
     @PutMapping("/update/{id}")
-    public EstudianteModel update(@PathVariable Long id, @RequestBody EstudianteModel model) {
+    public EstudianteModel update(@PathVariable Long id, @Valid @RequestBody EstudianteModel model) {
         model.setId(id);
         return estudianteService.update(model);
     }
