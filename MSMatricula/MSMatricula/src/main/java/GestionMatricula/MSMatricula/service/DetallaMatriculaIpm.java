@@ -2,13 +2,13 @@ package GestionMatricula.MSMatricula.service;
 
 import java.util.List;
 
-import GestionMatricula.MSMatricula.model.DetalleMatricula;
+import GestionMatricula.MSMatricula.model.ModelDetalleMatricula;
 
 public interface DetallaMatriculaIpm {
-    public List<DetalleMatricula> mostrarDetalleMatricula();
-    public DetalleMatricula mostrarDetalleMatriId(Integer id);
-    public DetalleMatricula crearDetalleMatri(DetalleMatricula detalle);
-    public DetalleMatricula modificarDetalleMatri(DetalleMatricula detalle);
+    public List<ModelDetalleMatricula> mostrarDetalleMatricula();
+    public ModelDetalleMatricula mostrarDetalleMatriId(Integer id);
+    public ModelDetalleMatricula crearDetalleMatri(ModelDetalleMatricula detalle);
+    public ModelDetalleMatricula modificarDetalleMatri(ModelDetalleMatricula detalle);
     public boolean eliminarDetalleMatri(Integer id);
 
     

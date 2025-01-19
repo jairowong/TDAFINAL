@@ -2,8 +2,8 @@ package GestionMatricula.MSMatricula.repositorio;
 
 import org.springframework.data.repository.CrudRepository;
 
-import GestionMatricula.MSMatricula.model.Matricula;
+import GestionMatricula.MSMatricula.model.ModelMatricula;
 
-public interface MatriculaRepository extends CrudRepository<Matricula, Integer> {
+public interface MatriculaRepository extends CrudRepository<ModelMatricula, Integer> {
     
 }
