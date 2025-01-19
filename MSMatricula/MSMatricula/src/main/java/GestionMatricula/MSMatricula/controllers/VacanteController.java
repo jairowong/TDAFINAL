@@ -72,20 +72,9 @@ public class VacanteController {
 
     }
 
-     @PostMapping(Ruta.CrearVacante)
+     @PostMapping()
 
-    public ResponseEntity<?> crearAlumnos(@RequestBody Vacante vacam){
-        try {
-            if (vacam.getIdgrado()==null || vacam.getIdseccion()==null || vacam.getVacantes_disponibles()==null || vacam.getAño_alectivo()==null){
-                log.error("nose pudo crear la vacante");
-                return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("nose creo el alumno");      
-            }log.info("vacante creada");
-            return ResponseEntity.status(HttpStatus.CREATED).body(servicioIpm.crearVacante(vacam));
-        } catch (Exception e) {
-            log.error("vacante no creada", e );
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("nose pudo crear vacante");
-        }
-    }
+
 
     @PutMapping(Ruta.ModificarVacante)
 
