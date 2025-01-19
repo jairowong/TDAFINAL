@@ -1,4 +1,4 @@
-package GestionUsuario.MSUsuario;
+package GestionUsuario.MsUsuario;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
