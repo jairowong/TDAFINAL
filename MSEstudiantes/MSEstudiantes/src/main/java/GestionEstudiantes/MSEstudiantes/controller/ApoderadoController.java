@@ -2,7 +2,9 @@ package GestionEstudiantes.MSEstudiantes.controller;
 
 import java.util.List;
 
+import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -21,6 +23,7 @@ import jakarta.validation.Valid;
 @RequestMapping(RouterApi.APODERADO)
 public class ApoderadoController {
 
+
     @Autowired
     ApoderadoService apoderadoService;
 
@@ -34,9 +37,9 @@ public class ApoderadoController {
     
 
     @PostMapping("/create")
-    public ApoderadoModel create(@Valid @RequestBody ApoderadoModel model)
+    public  ResponseEntity<?> create(@Valid @RequestBody ApoderadoModel model)
     {   
-        return apoderadoService.add(model);
+        return ResponseEntity.ok(apoderadoService.add(model));
     }
 
     // findById
