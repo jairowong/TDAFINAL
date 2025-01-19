@@ -19,8 +19,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-
+import GestionPago.MSPago.dto.PagoDTO;
+import GestionPago.MSPago.model.PagoModel;
 import GestionPago.MSPago.service.PagoService;
+
+import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
