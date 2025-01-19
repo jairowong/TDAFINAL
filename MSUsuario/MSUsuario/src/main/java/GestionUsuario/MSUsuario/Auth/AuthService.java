@@ -1,16 +1,14 @@
-package GestionUsuario.MSUsuario.Auth;
+package GestionUsuario.MsUsuario.Auth;
 
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.irojas.demojwt.Jwt.JwtService;
-import com.irojas.demojwt.User.Role;
-import com.irojas.demojwt.User.User;
-import com.irojas.demojwt.User.UserRepository;
-
+import GestionUsuario.MsUsuario.Jwt.JwtService;
+import GestionUsuario.MsUsuario.User.Role;
+import GestionUsuario.MsUsuario.User.User;
+import GestionUsuario.MsUsuario.User.UserRepository;
 import lombok.RequiredArgsConstructor;
 
 @Service

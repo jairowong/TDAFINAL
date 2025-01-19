@@ -1,4 +1,4 @@
-package GestionUsuario.MSUsuario.Jwt;
+package GestionUsuario.MsUsuario.Jwt;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -10,13 +10,12 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 
-import com.irojas.demojwt.User.User;
-
+import GestionUsuario.MsUsuario.User.User;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
-
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
+
 
 @Service
 public class JwtService {

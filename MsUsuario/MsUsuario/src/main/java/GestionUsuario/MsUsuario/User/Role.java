@@ -1,4 +1,4 @@
-package GestionUsuario.MSUsuario.User;
+package GestionUsuario.MsUsuario.User;
 
 public enum Role {
     ADMIN,

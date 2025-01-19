@@ -1,4 +1,4 @@
-package GestionUsuario.MSUsuario.User;
+package GestionUsuario.MsUsuario.User;
 
 import java.util.Optional;
 

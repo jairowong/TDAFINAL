@@ -1,4 +1,4 @@
-package GestionUsuario.MSUsuario.Jwt;
+package GestionUsuario.MsUsuario.Jwt;
 
 import java.io.IOException;
 

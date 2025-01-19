@@ -1,4 +1,4 @@
-package GestionUsuario.MSUsuario.Auth;
+package GestionUsuario.MsUsuario.Auth;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

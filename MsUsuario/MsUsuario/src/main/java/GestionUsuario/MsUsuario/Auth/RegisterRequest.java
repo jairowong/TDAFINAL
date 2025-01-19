@@ -1,4 +1,4 @@
-package GestionUsuario.MSUsuario.Auth;
+package GestionUsuario.MsUsuario.Auth;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

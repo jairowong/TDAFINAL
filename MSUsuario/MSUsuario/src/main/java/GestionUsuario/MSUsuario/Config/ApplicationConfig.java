@@ -1,4 +1,4 @@
-package GestionUsuario.MSUsuario.Config;
+package GestionUsuario.MsUsuario.Config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -11,8 +11,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-import com.irojas.demojwt.User.UserRepository;
-
+import GestionUsuario.MsUsuario.User.UserRepository;
 import lombok.RequiredArgsConstructor;
 
 @Configuration
