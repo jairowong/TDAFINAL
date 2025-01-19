@@ -2,55 +2,61 @@ package GestionPago.MSPago.model;
 
 import java.util.Date;
 
-import jakarta.persistence.*;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
-@Entity
-@Table(name = "pago")
+@Document(collection = "pagos")
 public class PagoModel {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seqPagos")
-    @SequenceGenerator(name = "seqPagos", allocationSize = 1, sequenceName = "seq_pagos")
-    @Column(name = "id_pago")
-    private Integer id;
+    private int id;
 
-    @Column(name = "id_matricula")
-    private Integer idMatr;
-
-    @Column(name = "fecha_pago ")
-    private Date fechaMatr;
-
+    private String nombre;
+    private String apellido;
+    private Date fecha;
     private double monto;
-
-    public Integer getId() {
+    private String tipoPago;
+    private int idUsuario;
+    public int getId() {
         return id;
     }
-
-    public void setId(Integer id) {
+    public void setId(int id) {
         this.id = id;
     }
-
-    public Integer getIdMatr() {
-        return idMatr;
+    public String getNombre() {
+        return nombre;
     }
-
-    public void setIdMatr(Integer idMatr) {
-        this.idMatr = idMatr;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
-
-    public Date getFechaMatr() {
-        return fechaMatr;
+    public String getApellido() {
+        return apellido;
     }
-
-    public void setFechaMatr(Date fechaMatr) {
-        this.fechaMatr = fechaMatr;
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
     }
-
+    public Date getFecha() {
+        return fecha;
+    }
+    public void setFecha(Date fecha) {
+        this.fecha = fecha;
+    }
     public double getMonto() {
         return monto;
     }
-
     public void setMonto(double monto) {
         this.monto = monto;
     }
-
+    public String getTipoPago() {
+        return tipoPago;
+    }
+    public void setTipoPago(String tipoPago) {
+        this.tipoPago = tipoPago;
+    }
+    public int getIdUsuario() {
+        return idUsuario;
+    }
+    public void setIdUsuario(int idUsuario) {
+        this.idUsuario = idUsuario;
+    }
+    
 }

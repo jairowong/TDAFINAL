@@ -1,0 +1,23 @@
+
+version: '3.8'
+services:
+  mongo:
+    image: mongo:latest
+    container_name: mongo
+    ports:
+      - "27018:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: 123456
+      MONGO_INITDB_DATABASE: database-mongo
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - tda2025
+volumes:
+  mongo-data:
+
+networks:
+  tda2025:
+    name: taller-2025
+
