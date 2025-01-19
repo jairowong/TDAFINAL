@@ -10,7 +10,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "matricula")
-public class Matricula {
+public class ModelMatricula {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,7 +22,7 @@ public class Matricula {
     private String mat_seccion;
     private int tipo_matricula;
     
-    public Matricula() {
+    public ModelMatricula() {
     }
 
     public int getId() {

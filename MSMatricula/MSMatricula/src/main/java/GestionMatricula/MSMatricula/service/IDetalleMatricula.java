@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import GestionMatricula.MSMatricula.model.DetalleMatricula;
+import GestionMatricula.MSMatricula.model.ModelDetalleMatricula;
 import GestionMatricula.MSMatricula.repositorio.DetalleMatriculaRepository;
 
 @Service
@@ -16,22 +16,22 @@ public class IDetalleMatricula implements DetallaMatriculaIpm {
     
 
     @Override
-    public List<DetalleMatricula> mostrarDetalleMatricula() {
-        return (List<DetalleMatricula>) detalleRepository.findAll();
+    public List<ModelDetalleMatricula> mostrarDetalleMatricula() {
+        return (List<ModelDetalleMatricula>) detalleRepository.findAll();
     }
 
     @Override
-    public DetalleMatricula mostrarDetalleMatriId(Integer id) {
+    public ModelDetalleMatricula mostrarDetalleMatriId(Integer id) {
         return detalleRepository.findById(id).orElse(null);
     }
 
     @Override
-    public DetalleMatricula crearDetalleMatri(DetalleMatricula detalle) {
+    public ModelDetalleMatricula crearDetalleMatri(ModelDetalleMatricula detalle) {
      return detalleRepository.save(detalle);
     }
 
     @Override
-    public DetalleMatricula modificarDetalleMatri(DetalleMatricula detalle) {
+    public ModelDetalleMatricula modificarDetalleMatri(ModelDetalleMatricula detalle) {
      return detalleRepository.save(detalle);
     }
 

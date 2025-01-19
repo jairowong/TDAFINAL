@@ -8,7 +8,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name="detallematricula")
-public class DetalleMatricula {
+public class ModelDetalleMatricula {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,7 +20,7 @@ public class DetalleMatricula {
     private String curso;
     private String periodo;
 
-    public DetalleMatricula() {
+    public ModelDetalleMatricula() {
     }
 
     public int getIddetalle_matricula() {
