@@ -2,7 +2,7 @@ server:
   port: 6001
   
 jwt:
-  secret: Key#SuperSecret$PolyglotTest#JavaMicroservices#940527000
+  secret: Bx4MeizkOfmx5buS0AeRdfWkK1H4GI8abShDqtZq6gA=
   
 spring:
   application:
@@ -23,8 +23,8 @@ spring:
               allowedHeaders: "*"
     routes:      
       
-      - id: appsecurity
+      - id: MsUsuario
         uri: http://localhost:8084
         predicates:
-            - Path=/api/auth/**
+            - Path=/auth/**
  
