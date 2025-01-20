@@ -15,6 +15,7 @@ public class Solicitud {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    
     public int IdVacante;
     public int IdAlumno;
     public Date fecha_solicitud;
@@ -23,12 +24,7 @@ public class Solicitud {
     public Solicitud() {
     }
 
-    public Solicitud(int idVacante, int idAlumno, Date fecha_solicitud, String estado) {
-        IdVacante = idVacante;
-        IdAlumno = idAlumno;
-        this.fecha_solicitud = fecha_solicitud;
-        this.estado = estado;
-    }
+ 
 
     public int getIdVacante() {
         return IdVacante;
