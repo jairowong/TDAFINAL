@@ -1,0 +1,30 @@
+server:
+  port: 6001
+  
+jwt:
+  secret: Key#SuperSecret$PolyglotTest#JavaMicroservices#940527000
+  
+spring:
+  application:
+    name: appgateway
+  cloud:
+   gateway:
+    discovery:
+        locator:
+          enabled: true
+          lowerCaseServiceId: true
+        default-filters:
+        - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin
+        globalcors:
+        corsConfigurations:
+          '[/**]':
+              allowedOrigins: "*"
+              allowedMethods: "*"
+              allowedHeaders: "*"
+    routes:      
+      
+      - id: appsecurity
+        uri: http://localhost:8084
+        predicates:
+            - Path=/api/auth/**
+ 
