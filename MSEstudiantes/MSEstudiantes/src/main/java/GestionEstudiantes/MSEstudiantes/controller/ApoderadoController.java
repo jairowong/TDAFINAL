@@ -42,7 +42,7 @@ public class ApoderadoController {
 
     // findById
     @GetMapping("/findById/{id}")
-    public  ResponseEntity<?> findById(@Valid @RequestBody ApoderadoModel model)
+    public  ResponseEntity<?> findById( @RequestBody ApoderadoModel model)
     {
         return ResponseEntity.ok(apoderadoService.add(model));
     }
@@ -56,7 +56,7 @@ public class ApoderadoController {
 
     // delete
     @DeleteMapping("/delete/{id}")
-    public  ResponseEntity<?> delete(@Valid @RequestBody ApoderadoModel model) 
+    public  ResponseEntity<?> delete(@RequestBody ApoderadoModel model) 
     {
         return ResponseEntity.ok(apoderadoService.add(model));
         
