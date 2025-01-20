@@ -40,7 +40,7 @@ public class DocumentacionController {
 
     // findById
     @GetMapping("/findById/{id}")
-    public  ResponseEntity<?> findById(@Valid @RequestBody DocumentacionModel model) 
+    public  ResponseEntity<?> findById( @RequestBody DocumentacionModel model) 
     {
         return ResponseEntity.ok(documentacionService.add(model));
     }
@@ -54,7 +54,7 @@ public class DocumentacionController {
 
     // delete
     @DeleteMapping("/delete/{id}")
-    public  ResponseEntity<?> delete(@Valid @RequestBody DocumentacionModel model)
+    public  ResponseEntity<?> delete(@RequestBody DocumentacionModel model)
     {
         return ResponseEntity.ok(documentacionService.add(model));   
     }
