@@ -23,7 +23,7 @@ import GestionMatricula.MSMatricula.service.VacanteServiceIpm;
 
 
 @RestController
-@RequestMapping(Ruta.Api)
+
 
 public class VacanteController {
 
@@ -32,7 +32,7 @@ public class VacanteController {
     @Autowired
     VacanteServiceIpm servicioIpm;
 
-    @GetMapping(Ruta.ListaVacante)
+    @GetMapping()
 
     public ResponseEntity<List<Vacante>> mostrarVacantes(){
         
@@ -52,7 +52,7 @@ public class VacanteController {
 
     }
 
-    @GetMapping(Ruta.BuscarVacanteid)
+    @GetMapping()
 
     public ResponseEntity<?> mostrarVacantes(@PathVariable Integer id){
 
@@ -78,7 +78,7 @@ public class VacanteController {
 
 
 
-    @DeleteMapping(Ruta.EliminarVacante)
+    @DeleteMapping()
 
         public ResponseEntity<String> eliminarVacantes (@PathVariable Integer id){
 
