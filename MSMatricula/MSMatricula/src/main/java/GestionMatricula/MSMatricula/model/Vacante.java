@@ -29,8 +29,7 @@ public class Vacante {
         public Vacante(int idgrado, int idseccion, int vacantes_disponibles, Date año_alectivo) {
             Idgrado = idgrado;
             Idseccion = idseccion;
-            this.vacantes_disponibles = vacantes_disponibles;
-            this.año_alectivo = año_alectivo;
+           
         }
 
 

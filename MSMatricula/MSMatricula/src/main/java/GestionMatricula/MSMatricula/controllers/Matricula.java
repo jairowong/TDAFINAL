@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import GestionMatricula.MSMatricula.model.ModelDetalleMatricula;
 import GestionMatricula.MSMatricula.model.ModelMatricula;
 import GestionMatricula.MSMatricula.service.IMatricula;
 
@@ -77,15 +76,15 @@ public class Matricula {
     }
 @PutMapping("/api/modificar")
     public ResponseEntity<?> modificarDetalle(@PathVariable Integer id, @RequestBody ModelMatricula detamo){
-        ModelMatricula modificar= new ModelDetalleMatricula();
-        if(detamo.getGrado()==null || detamo.getCurso()==null){
+        ModelMatricula modificar= new ModelMatricula();
+        if(detamo.getMat_estado()==null || detamo.getMat_grado()==null || detamo.getMat_estado()==null || detamo.getMat_seccion()==null){
             logger.error( "no se pudo cambiar el detalle");
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("hola");
         }
         try {
-            modificar.setCurso(detamo.getCurso());
-            modificar.setGrado(detamo.getGrado());
-            ModelDetalleMatricula update= matriservice.(modificar);
+            modificar.setMat_estado(detamo.getMat_estado());
+            modificar.setMat_grado(detamo.getMat_grado());
+            ModelMatricula update= matriservice.modificarMatri(modificar);
             if(update==null){
                 logger.error("no se modifico");
                 return ResponseEntity.notFound().build();
