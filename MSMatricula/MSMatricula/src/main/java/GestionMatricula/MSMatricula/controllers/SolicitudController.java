@@ -22,6 +22,7 @@ import GestionMatricula.MSMatricula.service.SolicitudServiceIpm;
 
 
 @RestController
+@RequestMapping("/apisolicitud")
 
 
 public class SolicitudController {
@@ -32,7 +33,7 @@ public class SolicitudController {
     @Autowired
     SolicitudServiceIpm servicioIpm;
 
-    @GetMapping()
+    @GetMapping("/listaSolicitud")
     public ResponseEntity<List<Solicitud>> mostrarSolitudes(){
         
 
@@ -51,7 +52,7 @@ public class SolicitudController {
 
     }
 
-    @GetMapping()
+    @GetMapping("/mostrarSolictud")
 
     public ResponseEntity<?> mostrarSolicitudes(@PathVariable Integer id){
 
@@ -71,7 +72,7 @@ public class SolicitudController {
 
     }
 
-    @PostMapping()
+    @PostMapping("/api/crearSolicitud")
 
     public ResponseEntity<?> crearSolicitudes(@RequestBody Solicitud soli){
         try {
@@ -86,7 +87,7 @@ public class SolicitudController {
         }
     }
 
-    @PutMapping()
+    @PutMapping("/api/modificarSolicitud")
 
     public ResponseEntity<?> modificarSolicitudes(@PathVariable Integer id, @RequestBody Solicitud soli){
 
@@ -114,7 +115,7 @@ public class SolicitudController {
 
     }
 
-    @DeleteMapping()
+    @DeleteMapping("/api/Solicitud")
 
         public ResponseEntity<String> eliminarSolicitudes (@PathVariable Integer id){
 

@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,12 +16,15 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+
+
 
 import GestionMatricula.MSMatricula.model.Vacante;
 import GestionMatricula.MSMatricula.service.VacanteServiceIpm;
 
 
+@Controller
+@RequestMapping("apivacante")
 
 public class VacanteController {
 
@@ -29,7 +33,7 @@ public class VacanteController {
     @Autowired
     VacanteServiceIpm servicioIpm;
 
-    @GetMapping()
+    @GetMapping("/listarvacante")
 
     public ResponseEntity<List<Vacante>> mostrarVacantes(){
         
@@ -49,7 +53,7 @@ public class VacanteController {
 
     }
 
-    @GetMapping()
+    @GetMapping("/api/mostrarvacante")
 
     public ResponseEntity<?> mostrarVacantes(@PathVariable Integer id){
 
@@ -69,13 +73,50 @@ public class VacanteController {
 
     }
 
-     @PostMapping()
+      @PostMapping("/api/crearvacantes")
 
+    public ResponseEntity<?> crearvacantes(@RequestBody Vacante vaca){
+        try {
+            if (vaca.getVacantes_disponibles()==null || vaca.getAño_alectivo()=null) {
+                log.error("nose pudo crear la vacante");
+                return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("nose creo la vacante");      
+            }log.info("vacante creada");
+            return ResponseEntity.status(HttpStatus.CREATED).body(servicioIpm.crearVacante(vaca));
+        } catch (Exception e) {
+            log.error("vacante no creada", e );
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("nose creo la vacante");
+        }
+    }
 
+     @PutMapping("/api/modificarVacante")
 
+    public ResponseEntity<?> modificarVacante(@PathVariable Integer id, @RequestBody Vacante vaca){
 
+        Vacante modiVaca = new Vacante();
+        if (vaca.getVacantes_disponibles()==null && vaca.getAño_alectivo()==null) {
+            log.error("nose pudo modificar la vacante");
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("nose creo la vacante");            
+        }  try {
+            
+            modiVaca.setVacantes_disponibles(vaca.getVacantes_disponibles());
+            modiVaca.setAño_alectivo(vaca.getAño_alectivo());
 
-    @DeleteMapping()
+            Vacante vacanteModificado = servicioIpm.modificarVacante(modiVaca);
+            if (vacanteModificado == null) {
+                log.error("nose modifico la vacante");
+                return ResponseEntity.notFound().build();
+            } else{
+                log.info("se modifico la vacante");
+                return ResponseEntity.status(HttpStatus.ACCEPTED).body("vacante modificada");
+            }
+        } catch (Exception e) {
+            log.error("vacante no modificada", e);
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("vacante no modificado");
+        }
+
+    }
+   
+    @DeleteMapping("/api/eliminarvacante")
 
         public ResponseEntity<String> eliminarVacantes (@PathVariable Integer id){
 
