@@ -1,5 +1,7 @@
 package GestionUsuario.MsUsuario.Auth;
 
+import java.util.List;
+
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -37,7 +39,7 @@ public class AuthService {
             .firstname(request.getFirstname())
             .lastname(request.lastname)
             .country(request.getCountry())
-            .role(Role.USER)
+            .role(Role.ADMIN)
             .build();
 
         userRepository.save(user);
@@ -45,7 +47,9 @@ public class AuthService {
         return AuthResponse.builder()
             .token(jwtService.getToken(user))
             .build();
-        
+    } 
+    // Nuevo método para obtener todos los usuarios
+    public List<User> getAllUsers() {
+        return userRepository.findAll();
     }
-
 }
