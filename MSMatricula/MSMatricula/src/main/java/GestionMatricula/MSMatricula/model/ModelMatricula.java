@@ -24,6 +24,9 @@ public class ModelMatricula {
     
     public ModelMatricula() {
     }
+    public ModelMatricula(String idalumno){
+        this.idalumno=idalumno;
+    }
 
     public int getId() {
         return id;
