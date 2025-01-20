@@ -92,11 +92,11 @@ public class SolicitudController {
     public ResponseEntity<?> modificarSolicitudes(@PathVariable Integer id, @RequestBody Solicitud soli){
 
         Solicitud modiSoli = new Solicitud();
-        if (soli.getFecha_solicitud()==null && soli.getEstado()==null) {
+        if (soli.getIdAlumno()==0 || soli.getFecha_solicitud()==null && soli.getEstado()==null) {
             log.error("nose pudo modificar la solicitud");
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("nose creo la solicitud");            
         }  try {
-            
+            modiSoli.setIdAlumno(soli.getIdAlumno());
             modiSoli.setFecha_solicitud(soli.getFecha_solicitud());
             modiSoli.setEstado(soli.getEstado());
 
