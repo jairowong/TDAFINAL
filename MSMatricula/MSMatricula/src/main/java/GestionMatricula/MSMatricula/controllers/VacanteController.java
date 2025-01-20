@@ -18,11 +18,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import GestionMatricula.MSMatricula.model.Vacante;
-import GestionMatricula.MSMatricula.route.Ruta;
 import GestionMatricula.MSMatricula.service.VacanteServiceIpm;
 
-
-@RestController
 
 
 public class VacanteController {
@@ -93,5 +90,6 @@ public class VacanteController {
             }
 
         }
+      
 
 }

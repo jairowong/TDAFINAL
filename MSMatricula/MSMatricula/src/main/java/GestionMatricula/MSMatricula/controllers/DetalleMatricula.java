@@ -31,7 +31,7 @@ public class DetalleMatricula {
     @Autowired
      IDetalleMatricula detalleservice;
 
-    @GetMapping("/api/detalle")
+    @GetMapping("/mostrar")
     public ResponseEntity<List<ModelDetalleMatricula>> buscar(){
 
         try {
