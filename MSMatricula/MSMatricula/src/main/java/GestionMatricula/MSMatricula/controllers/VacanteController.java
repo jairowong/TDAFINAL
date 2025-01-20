@@ -76,35 +76,7 @@ public class VacanteController {
 
 
 
-    @PutMapping(Ruta.ModificarVacante)
 
-    public ResponseEntity<?> modificarvacantes(@PathVariable Integer id, @RequestBody Vacante vacam){
-
-        Vacante modiVacam = new Vacante();
-        if (vacam.getIdgrado()==null || vacam.getIdseccion()==null || vacam.getVacantes_disponibles()==null || vacam.getAño_alectivo()==null) {
-            log.error("nose pudo modificar la vacante");
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("nose creo la vacante");            
-        }  try {
-          
-            modiVacam.setIdgrado(vacam.getIdgrado());
-            modiVacam.setIdseccion(vacam.getIdseccion());
-            modiVacam.setVacantes_disponibles(vacam.getVacantes_disponibles());
-            modiVacam.setAño_alectivo(vacam.getAño_alectivo());
-
-            Vacante vacanteModificado = servicioIpm.modificarVacante(modiVacam);
-            if (vacanteModificado == null) {
-                log.error("nose pudo modificar la vacante");
-                return ResponseEntity.notFound().build();
-            } else{
-                log.info("vacante modificada");
-                return ResponseEntity.status(HttpStatus.ACCEPTED).body("vacante modificada");
-            }
-        } catch (Exception e) {
-            log.error("vacante no modificada", e);
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("vacante no modificada");
-        }
-
-    }
 
     @DeleteMapping(Ruta.EliminarVacante)
 
