@@ -22,9 +22,10 @@ import GestionMatricula.MSMatricula.service.SolicitudServiceIpm;
 
 
 @RestController
-@RequestMapping()
+
 
 public class SolicitudController {
+
 
     public static final Logger log=LoggerFactory.getLogger(SolicitudController.class);
 

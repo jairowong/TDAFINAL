@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import GestionMatricula.MSMatricula.model.ModelDetalleMatricula;
 import GestionMatricula.MSMatricula.service.IDetalleMatricula;
@@ -22,6 +23,7 @@ import GestionMatricula.MSMatricula.service.IDetalleMatricula;
 
 
 @Controller
+@RequestMapping("/apiDetalle")
 public class DetalleMatricula {
 
     private static final Logger loger=LoggerFactory.getLogger(DetalleMatricula.class);
@@ -29,7 +31,7 @@ public class DetalleMatricula {
     @Autowired
      IDetalleMatricula detalleservice;
 
-    @GetMapping("/api/detalle")
+    @GetMapping("/mostrar")
     public ResponseEntity<List<ModelDetalleMatricula>> buscar(){
 
         try {
@@ -46,7 +48,7 @@ public class DetalleMatricula {
         }
     } 
 
-    @GetMapping()
+    @GetMapping("/api/mostrar")
     public ResponseEntity<?> buscarporId(@PathVariable Integer id){
         try {
             ModelDetalleMatricula detamodel= detalleservice.mostrarDetalleMatriId(id);
@@ -63,7 +65,7 @@ public class DetalleMatricula {
         }
     }
 
-    @PostMapping()
+    @PostMapping("/api/crear")
     public ResponseEntity<?> crearDetalle(@RequestBody ModelDetalleMatricula detaMo){
         try {
             if (detaMo.getGrado()==null || detaMo.getCurso()==null) {
@@ -78,7 +80,7 @@ public class DetalleMatricula {
         }
     }
 
-    @PutMapping()
+    @PutMapping("/api/modificar")
     public ResponseEntity<?> modificarDetalle(@PathVariable Integer id, @RequestBody ModelDetalleMatricula detamo){
         ModelDetalleMatricula modificar= new ModelDetalleMatricula();
         if(detamo.getGrado()==null || detamo.getCurso()==null){
@@ -102,7 +104,7 @@ public class DetalleMatricula {
         }
     }
 
-    @DeleteMapping
+    @DeleteMapping("/api/borrar")
     public ResponseEntity<String> eliminar(@PathVariable Integer id){
         try {
             boolean elininar=detalleservice.eliminarDetalleMatri(id);
