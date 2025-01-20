@@ -3,15 +3,14 @@ package GestionEstudiantes.MSEstudiantes.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
 import GestionEstudiantes.MSEstudiantes.service.DocumentacionService;
 import jakarta.validation.Valid;
 import GestionEstudiantes.MSEstudiantes.model.DocumentacionModel;
@@ -34,28 +33,29 @@ public class DocumentacionController {
     
 
     @PostMapping("/create")
-    public DocumentacionModel create(@Valid @RequestBody DocumentacionModel model)
+     public  ResponseEntity<?> create(@Valid @RequestBody DocumentacionModel model)
     {   
-        return documentacionService.add(model);
+        return ResponseEntity.ok(documentacionService.add(model));
     }
 
     // findById
     @GetMapping("/findById/{id}")
-    public DocumentacionModel findById(@PathVariable Integer id) {
-        return documentacionService.findById(id);
+    public  ResponseEntity<?> findById(@Valid @RequestBody DocumentacionModel model) 
+    {
+        return ResponseEntity.ok(documentacionService.add(model));
     }
 
     // update
     @PutMapping("/update/{id}")
-    public DocumentacionModel update(@PathVariable Long id, @Valid @RequestBody DocumentacionModel model) {
-        model.setId(id);
-        return documentacionService.update(model);
+    public  ResponseEntity<?> update(@Valid @RequestBody DocumentacionModel model)
+     {
+        return ResponseEntity.ok(documentacionService.add(model));
     }
 
     // delete
     @DeleteMapping("/delete/{id}")
-    public String delete(@PathVariable Integer id) {
-        documentacionService.delete(id);
-        return "Estudiante eliminado con éxito";
+    public  ResponseEntity<?> delete(@Valid @RequestBody DocumentacionModel model)
+    {
+        return ResponseEntity.ok(documentacionService.add(model));   
     }
 }
