@@ -1,49 +1,27 @@
-server:
-  port: 6001
-
-jwt:
-  secret: Key#SuperSecret$PolyglotTest#JavaMicroservices#940527000
-
 spring:
-  application:
-    name: appgateway
   cloud:
     gateway:
+      routes:
+        - id: msusuario-login
+          uri: http://localhost:8081  # Cambiado al puerto 8081 de MsUsuario
+          predicates:
+            - Path=/auth/login       # Ruta de login que será redirigida a MsUsuario
+          filters:
+            - AddRequestHeader=X-Request-Foo, Bar   # (Opcional) Ejemplo de filtro de cabecera
+
+        - id: msusuario-register
+          uri: http://localhost:8081  # Cambiado al puerto 8081 de MsUsuario
+          predicates:
+            - Path=/auth/register    # Ruta de registro que será redirigida a MsUsuario
+          filters:
+            - AddRequestHeader=X-Request-Foo, Bar   # (Opcional) Ejemplo de filtro de cabecera
+
+      # Otras configuraciones generales del Gateway, por ejemplo:
       default-filters:
-        - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin
-      globalcors:
-        corsConfigurations:
-          '[/**]':
-              allowedOrigins: "*"
-              allowedMethods: "*"
-              allowedHeaders: "*"
-      routes:      
-      - id: appseguridad
-        uri: http://localhost:85
-        predicates:
-          - Path=/security/**
-        filters:
-          - StripPrefix=1
-      - id: appdeposit
-        uri: http://localhost:86
-        predicates:
-          - Path=/deposit/**
-        filters:
-          - StripPrefix=1
-          - JwtAuthenticationFilter
-      - id: appaccount
-        uri: http://localhost:87
-        predicates:
-          - Path=/account/**
-        filters:
-          - StripPrefix=1
-          - JwtAuthenticationFilter
-      - id: apptransaction
-        uri: http://localhost:88
-        predicates:
-          - Path=/transaction/**
-        filters:
-          - StripPrefix=1
-          - JwtAuthenticationFilter
-           
-  
+        - name: RequestTimeFilter   # Filtro predeterminado para agregar tiempos de solicitud
+
+      # Configuración de puerto para el Gateway (opcional, si no tienes otra configuración)
+      server:
+        port: 8080  # El puerto del Gateway
+
+
