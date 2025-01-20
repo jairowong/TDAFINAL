@@ -5,8 +5,10 @@ import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.edu.pe.model.PagoModel;
-import com.edu.pe.repository.IPagoRepository;
+
+import GestionPago.MSPago.model.PagoModel;
+import GestionPago.MSPago.repository.IPagoRepository;
+
 
 @Service
 public class PagoService {
@@ -23,11 +25,12 @@ public class PagoService {
 
     public PagoModel findById(int id) {
         Optional<PagoModel> pago = pagoRepository.findById(id);
-        if(model.isPresent()){
-            return model.get();
+        if(pago.isPresent()){
+            return pago.get();
         }else{
             return null;
         }
 
 
+    }
 }

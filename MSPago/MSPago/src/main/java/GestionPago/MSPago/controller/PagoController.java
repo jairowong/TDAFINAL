@@ -1,18 +1,15 @@
 package GestionPago.MSPago.controller;
 
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-
 
 import java.util.Date;
 import java.util.HashMap;
@@ -20,9 +17,15 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+import GestionPago.MSPago.config.UtilsProperties;
+import GestionPago.MSPago.dto.PagoDTO;
+import GestionPago.MSPago.model.PagoModel;
+import GestionPago.MSPago.service.PagoService;
 
+import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 
 @RestController
 @RequestMapping("/api/pago")
@@ -33,9 +36,9 @@ public class PagoController {
 	private PagoService alumnoService;
 
 	@Autowired
-	private UtilsProperties prop;
+	private UtilsProperties prop;	
 
-	@GetMapping("/getAll")
+	@GetMapping("/list")
 	public ResponseEntity<?> getAll() {
 		Map<String, Object> salida = new HashMap<String, Object>();
 		try {
@@ -52,7 +55,7 @@ public class PagoController {
 			return new ResponseEntity<>(salida, HttpStatus.OK);
 		} catch (Exception ex) {
 			logger.error(ex.getMessage());
-			salida.put("msg", prop.MSG_ERROR_RECUPERAR);
+			salida.put("msg", prop.MS_ERROR_RECUPERAR);
 			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(salida);
 		}
 	}
@@ -73,12 +76,12 @@ public class PagoController {
 				salida.put("data", dto);
 				return new ResponseEntity<>(salida, HttpStatus.OK);
 			} else {
-				salida.put("msg", prop.MSG_NO_ENCONTRADO);
+				salida.put("msg", prop.MS_NO_ENCONTRADO);
 				return ResponseEntity.status(HttpStatus.NOT_FOUND).body(salida);
 			}
 		} catch (Exception ex) {
 			logger.error(ex.getMessage());
-			salida.put("msg", prop.MSG_ERROR_RECUPERAR);
+			salida.put("msg", prop.MS_ERROR_RECUPERAR);
 			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(salida);
 		}
 	}
@@ -91,14 +94,14 @@ public class PagoController {
 
 			ModelMapper m = new ModelMapper();
 			PagoModel obj = m.map(request, PagoModel.class);
-			obj.setFechaMatr(new Date());
-			salida.put("msg", prop.MSG_EXITO_GUARDAR);
+			obj.setFecha(new Date());
+			salida.put("msg", prop.MS_EXITO_GUARDAR);
 			salida.put("data", alumnoService.add(obj));
 
 			return ResponseEntity.status(HttpStatus.OK).body(salida);
 		} catch (Exception ex) {
 			logger.error(ex.getMessage());
-			salida.put("msg", prop.MSG_ERROR_PROCESAR);
+			salida.put("msg", prop.MS_EROR_PROCESAR);
 			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(salida);
 		}
 	}
