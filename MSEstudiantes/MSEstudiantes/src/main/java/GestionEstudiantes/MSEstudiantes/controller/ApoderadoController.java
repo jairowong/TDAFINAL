@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 import GestionEstudiantes.MSEstudiantes.model.ApoderadoModel;
 import GestionEstudiantes.MSEstudiantes.router.RouterApi;
-import GestionEstudiantes.MSEstudiantes.service.IApoderadoService; // Asegúrate de tener esta interfaz
+import GestionEstudiantes.MSEstudiantes.service.IApoderadoService;
 import jakarta.validation.Valid;
 
 @RestController
