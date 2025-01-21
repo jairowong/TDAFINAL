@@ -16,9 +16,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-
 import GestionMatricula.MSMatricula.model.ModelDetalleMatricula;
-import GestionMatricula.MSMatricula.model.ModelMatricula;
 import GestionMatricula.MSMatricula.service.IDetalleMatricula;
 
 
