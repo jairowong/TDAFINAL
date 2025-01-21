@@ -2,64 +2,66 @@ package GestionEstudiantes.MSEstudiantes.controller;
 
 import java.util.List;
 
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
 import GestionEstudiantes.MSEstudiantes.model.ApoderadoModel;
 import GestionEstudiantes.MSEstudiantes.router.RouterApi;
-import GestionEstudiantes.MSEstudiantes.service.ApoderadoService;
+import GestionEstudiantes.MSEstudiantes.service.IApoderadoService; // Asegúrate de tener esta interfaz
 import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping(RouterApi.APODERADO)
 public class ApoderadoController {
 
-
     @Autowired
-    ApoderadoService apoderadoService;
+    private IApoderadoService apoderadoService;
 
     // Método para listar Apoderados
     @GetMapping("/findAll")
-    public List<ApoderadoModel> FindAll()
-    {
+    public ResponseEntity<List<ApoderadoModel>> findAll() {
         List<ApoderadoModel> lista = apoderadoService.findAll();
-        return lista;
+        return ResponseEntity.ok(lista);
     }
-    
 
+    // Crear Apoderado
     @PostMapping("/create")
-    public  ResponseEntity<?> create(@Valid @RequestBody ApoderadoModel model)
-    {   
-        return ResponseEntity.ok(apoderadoService.add(model));
+    public ResponseEntity<ApoderadoModel> create(@Valid @RequestBody ApoderadoModel model) {   
+        ApoderadoModel createdApoderado = apoderadoService.add(model);
+        return ResponseEntity.ok(createdApoderado);
     }
 
-    // findById
+    // Buscar Apoderado por ID
     @GetMapping("/findById/{id}")
-    public  ResponseEntity<?> findById( @RequestBody ApoderadoModel model)
-    {
-        return ResponseEntity.ok(apoderadoService.add(model));
+    public ResponseEntity<ApoderadoModel> findById(@PathVariable Long id) {
+        ApoderadoModel apoderado = apoderadoService.findById(id);
+        if (apoderado != null) {
+            return ResponseEntity.ok(apoderado);
+        } else {
+            return ResponseEntity.notFound().build();
+        }
     }
 
-    // update
+    // Actualizar Apoderado
     @PutMapping("/update/{id}")
-    public  ResponseEntity<?> update(@Valid @RequestBody ApoderadoModel model)
-     {
-        return ResponseEntity.ok(apoderadoService.add(model));
+    public ResponseEntity<ApoderadoModel> update(@PathVariable Long id, @Valid @RequestBody ApoderadoModel model) {
+        ApoderadoModel updatedApoderado = apoderadoService.update(id, model);
+        if (updatedApoderado != null) {
+            return ResponseEntity.ok(updatedApoderado);
+        } else {
+            return ResponseEntity.notFound().build();
+        }
     }
 
-    // delete
+    // Eliminar Apoderado
     @DeleteMapping("/delete/{id}")
-    public  ResponseEntity<?> delete(@RequestBody ApoderadoModel model) 
-    {
-        return ResponseEntity.ok(apoderadoService.add(model));
-        
+    public ResponseEntity<Void> delete(@PathVariable Long id) {
+        boolean isDeleted = apoderadoService.delete(id);
+        if (isDeleted) {
+            return ResponseEntity.ok().build();
+        } else {
+            return ResponseEntity.notFound().build();
+        }
     }
 }
-

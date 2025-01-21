@@ -4,58 +4,64 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-import GestionEstudiantes.MSEstudiantes.service.DocumentacionService;
-import jakarta.validation.Valid;
+import org.springframework.web.bind.annotation.*;
+
 import GestionEstudiantes.MSEstudiantes.model.DocumentacionModel;
 import GestionEstudiantes.MSEstudiantes.router.RouterApi;
+import GestionEstudiantes.MSEstudiantes.service.IDocumentacionService;
+import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping(RouterApi.DOCUMENTACION)
 public class DocumentacionController {
 
     @Autowired
-    DocumentacionService documentacionService;
+    private IDocumentacionService documentacionService;
 
     // Método para listar documentos
     @GetMapping("/findAll")
-    public List<DocumentacionModel> FindAll()
-    {
+    public ResponseEntity<List<DocumentacionModel>> findAll() {
         List<DocumentacionModel> lista = documentacionService.findAll();
-        return lista;
+        return ResponseEntity.ok(lista);
     }
-    
 
+    // Crear Documento
     @PostMapping("/create")
-     public  ResponseEntity<?> create(@Valid @RequestBody DocumentacionModel model)
-    {   
-        return ResponseEntity.ok(documentacionService.add(model));
+    public ResponseEntity<DocumentacionModel> create(@Valid @RequestBody DocumentacionModel model) {   
+        DocumentacionModel createdDocumentacion = documentacionService.add(model);
+        return ResponseEntity.ok(createdDocumentacion);
     }
 
-    // findById
+    // Buscar Documento por ID
     @GetMapping("/findById/{id}")
-    public  ResponseEntity<?> findById( @RequestBody DocumentacionModel model) 
-    {
-        return ResponseEntity.ok(documentacionService.add(model));
+    public ResponseEntity<DocumentacionModel> findById(@PathVariable Long id) {
+        DocumentacionModel documentacion = documentacionService.findById(id);
+        if (documentacion != null) {
+            return ResponseEntity.ok(documentacion);
+        } else {
+            return ResponseEntity.notFound().build();
+        }
     }
 
-    // update
+    // Actualizar Documento
     @PutMapping("/update/{id}")
-    public  ResponseEntity<?> update(@Valid @RequestBody DocumentacionModel model)
-     {
-        return ResponseEntity.ok(documentacionService.add(model));
+    public ResponseEntity<DocumentacionModel> update(@PathVariable Long id, @Valid @RequestBody DocumentacionModel model) {
+        DocumentacionModel updatedDocumentacion = documentacionService.update(id, model);
+        if (updatedDocumentacion != null) {
+            return ResponseEntity.ok(updatedDocumentacion);
+        } else {
+            return ResponseEntity.notFound().build();
+        }
     }
 
-    // delete
+    // Eliminar Documento
     @DeleteMapping("/delete/{id}")
-    public  ResponseEntity<?> delete(@RequestBody DocumentacionModel model)
-    {
-        return ResponseEntity.ok(documentacionService.add(model));   
+    public ResponseEntity<Void> delete(@PathVariable Long id) {
+        boolean isDeleted = documentacionService.delete(id);
+        if (isDeleted) {
+            return ResponseEntity.ok().build();
+        } else {
+            return ResponseEntity.notFound().build();
+        }
     }
 }

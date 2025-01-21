@@ -1,12 +1,8 @@
 package GestionEstudiantes.MSEstudiantes.repository;
 
-import org.springframework.data.repository.CrudRepository;
-import org.springframework.stereotype.Repository;
-
+import org.springframework.data.jpa.repository.JpaRepository;
 import GestionEstudiantes.MSEstudiantes.model.EstudianteModel;
 
-@Repository
-public interface IEstudianteRepository
-        extends CrudRepository<EstudianteModel, Integer> {
-
+public interface IEstudianteRepository extends JpaRepository<EstudianteModel, Long> {
+    // Métodos personalizados si los hay
 }

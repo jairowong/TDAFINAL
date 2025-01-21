@@ -1,19 +1,12 @@
 package GestionEstudiantes.MSEstudiantes.service;
 
 import java.util.List;
-
 import GestionEstudiantes.MSEstudiantes.model.ApoderadoModel;
 
 public interface IApoderadoService {
-    
-
-    public List<ApoderadoModel> findAll();
-
-    public ApoderadoModel findById(Integer id);
-
-    public ApoderadoModel add(ApoderadoModel model);
-
-    public ApoderadoModel update(ApoderadoModel model);
-
-    public Boolean delete(Integer id);
+    List<ApoderadoModel> findAll();
+    ApoderadoModel findById(Long id);
+    ApoderadoModel add(ApoderadoModel model);
+    ApoderadoModel update(Long id, ApoderadoModel model);
+    Boolean delete(Long id);
 }

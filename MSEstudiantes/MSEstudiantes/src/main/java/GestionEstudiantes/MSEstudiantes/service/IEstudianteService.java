@@ -1,19 +1,47 @@
 package GestionEstudiantes.MSEstudiantes.service;
 
-
 import java.util.List;
-
 import GestionEstudiantes.MSEstudiantes.model.EstudianteModel;
+
 public interface IEstudianteService {
-    
 
-    public List<EstudianteModel> findAll();
+    /**
+     * Recupera todos los estudiantes.
+     *
+     * @return una lista de EstudianteModel
+     */
+    List<EstudianteModel> findAll();
 
-    public EstudianteModel findById(Integer id);
+    /**
+     * Encuentra un estudiante por su ID.
+     *
+     * @param id el ID del estudiante
+     * @return el EstudianteModel correspondiente o null si no se encuentra
+     */
+    EstudianteModel findById(Long id);
 
-    public EstudianteModel add(EstudianteModel model);
+    /**
+     * Agrega un nuevo estudiante.
+     *
+     * @param model el modelo del estudiante a agregar
+     * @return el EstudianteModel agregado
+     */
+    EstudianteModel add(EstudianteModel model);
 
-    public EstudianteModel update(EstudianteModel model);
+    /**
+     * Actualiza un estudiante existente.
+     *
+     * @param id el ID del estudiante a actualizar
+     * @param model el modelo con los datos actualizados
+     * @return el EstudianteModel actualizado o null si no se encuentra
+     */
+    EstudianteModel update(Long id, EstudianteModel model);
 
-    public Boolean delete(Integer id);
+    /**
+     * Elimina un estudiante por su ID.
+     *
+     * @param id el ID del estudiante a eliminar
+     * @return true si se eliminó exitosamente, false si no se encontró
+     */
+    Boolean delete(Long id);
 }
