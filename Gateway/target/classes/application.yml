@@ -30,17 +30,15 @@ spring:
       - id: MSMatricula
         uri: http://localhost:87
         predicates:
-<<<<<<< HEAD
             - Path=/auth/**
-      - id: MsEstudiante
-        uri: http://localhost:8081
+      - id: MSEstudiantes
+        uri: http://localhost:8801
         predicates:
-            - Path=/auth/**
-=======
-            - Path=/api/matricula/**
+            - Path=/estudiante/**
+            - Path=/documentacion/**
+            - Path=/apoderado/**
       - id: MSPago
         uri: http://localhost:85
         predicates:
             - Path=/api/pago/**
->>>>>>> 305180396e67bf7689ae11872166148d49180622
  
