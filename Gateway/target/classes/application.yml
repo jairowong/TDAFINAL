@@ -30,15 +30,37 @@ spring:
       - id: MSMatricula
         uri: http://localhost:87
         predicates:
-            - Path=/auth/**
+            - Path=/api/matricula/**
+      - id: MSMatricula
+        uri: http://localhost:87
+        predicates:
+            - Path=/apiDetalle/**
+      - id: MSMatricula
+        uri: http://localhost:87
+        predicates:
+            - Path=/apisolicitud/**
+      - id: MSMatricula
+        uri: http://localhost:87
+        predicates:
+            - Path=/apivacante/**
+      - id: MSEstudiantes
+        uri: http://localhost:8801
+        predicates:
+            - Path=/documentacion/**
+
       - id: MSEstudiantes
         uri: http://localhost:8801
         predicates:
             - Path=/estudiante/**
-            - Path=/documentacion/**
+
+      - id: MSEstudiantes
+        uri: http://localhost:8801
+        predicates:
             - Path=/apoderado/**
       - id: MSPago
         uri: http://localhost:85
         predicates:
             - Path=/api/pago/**
+ 
+
  

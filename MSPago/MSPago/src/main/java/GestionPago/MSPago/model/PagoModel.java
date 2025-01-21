@@ -2,12 +2,13 @@ package GestionPago.MSPago.model;
 
 import java.util.Date;
 
-import org.springframework.data.annotation.Id;
+import org.bson.codecs.pojo.annotations.BsonId;
+
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "pagos")
 public class PagoModel {
-    @Id
+    @BsonId
     private int id;
 
     private String nombre;
@@ -16,6 +17,12 @@ public class PagoModel {
     private double monto;
     private String tipoPago;
     private int idUsuario;
+
+    
+
+    public PagoModel() {
+    }
+    
     public int getId() {
         return id;
     }

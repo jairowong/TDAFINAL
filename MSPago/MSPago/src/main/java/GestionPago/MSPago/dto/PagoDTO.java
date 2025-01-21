@@ -11,6 +11,11 @@ public class PagoDTO {
     private String tipoPago;
     private int idUsuario;
 
+    // Constructor sin parámetros (necesario para ModelMapper)
+    public PagoDTO() {
+    }
+
+    // Constructor con parámetros (si lo necesitas para otras partes de tu código)
     public PagoDTO(int id, String nombre, String apellido, Date fecha, double monto, String tipoPago, int idUsuario) {
         this.id = id;
         this.nombre = nombre;
