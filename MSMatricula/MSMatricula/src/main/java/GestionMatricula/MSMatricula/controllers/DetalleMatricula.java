@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import GestionMatricula.MSMatricula.model.ModelDetalleMatricula;
+import GestionMatricula.MSMatricula.model.ModelMatricula;
 import GestionMatricula.MSMatricula.service.IDetalleMatricula;
 
 
@@ -80,27 +81,24 @@ public class DetalleMatricula {
         }
     }
 
-    @PutMapping("/modificar/{id}")
-    public ResponseEntity<?> modificarDetalle(@PathVariable Integer id, @RequestBody ModelDetalleMatricula detamo){
-        ModelDetalleMatricula modificar= new ModelDetalleMatricula();
-        if(detamo.getGrado()==null || detamo.getCurso()==null){
-            loger.error( "no se pudo cambiar el detalle");
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("hola");
+        @PutMapping("/modificar/{id}")
+    public ResponseEntity<String> modificarDetalle(@PathVariable Integer id, @RequestBody ModelDetalleMatricula detamo) {
+        if (detamo.getGrado()==null || detamo.getCurso()==null) {
+            loger.error("Datos incompletos para modificar el detalle.");
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Datos incompletos.");
         }
         try {
-            modificar.setCurso(detamo.getCurso());
-            modificar.setGrado(detamo.getGrado());
-            ModelDetalleMatricula update= detalleservice.modificarDetalleMatri(modificar);
-            if(update==null){
-                loger.error("no se modifico");
-                return ResponseEntity.notFound().build();
-            }else{
-                loger.info("se modifico el detalle");
-                return ResponseEntity.status(HttpStatus.ACCEPTED).body("se modifico");
+            detamo.setIddetalle_matricula(id); // Asegurarse de que el ID sea correcto
+            ModelDetalleMatricula actualizado = detalleservice.modificarDetalleMatri(detamo);
+            if (actualizado == null) {
+                loger.error("No se encontró el detalle con ID: " + id);
+                return ResponseEntity.status(HttpStatus.NOT_FOUND).body("No se encontró el detalle.");
             }
+            loger.info("Detalle modificado correctamente.");
+            return ResponseEntity.status(HttpStatus.OK).body("Detalle modificado con éxito.");
         } catch (Exception e) {
-           loger.error("no se creo el detalle");
-           return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("se modifico el detalle");
+            loger.error("Error al modificar el detalle: " + e.getMessage());
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Error interno del servidor.");
         }
     }
 
