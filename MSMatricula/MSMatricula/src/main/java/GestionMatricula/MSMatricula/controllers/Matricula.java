@@ -74,27 +74,24 @@ public class Matricula {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("no se creo el detalle");
         }
     }
-@PutMapping("/api/modificar/{id}")
-    public ResponseEntity<?> modificarDetalle(@PathVariable Integer id, @RequestBody ModelMatricula detamo){
-        ModelMatricula modificar= new ModelMatricula();
-        if(detamo.getMat_estado()==null || detamo.getMat_grado()==null || detamo.getMat_estado()==null || detamo.getMat_seccion()==null){
-            logger.error( "no se pudo cambiar el detalle");
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("hola");
+    @PutMapping("/modificar/{id}")
+    public ResponseEntity<String> modificarDetalle(@PathVariable Integer id, @RequestBody ModelMatricula detamo) {
+        if (detamo.getMat_estado() == null || detamo.getMat_grado() == null || detamo.getMat_seccion() == null) {
+            logger.error("Datos incompletos para modificar el detalle.");
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Datos incompletos.");
         }
         try {
-            modificar.setMat_estado(detamo.getMat_estado());
-            modificar.setMat_grado(detamo.getMat_grado());
-            ModelMatricula update= matriservice.modificarMatri(modificar);
-            if(update==null){
-                logger.error("no se modifico");
-                return ResponseEntity.notFound().build();
-            }else{
-                logger.info("se modifico el detalle");
-                return ResponseEntity.status(HttpStatus.ACCEPTED).body("se modifico");
+            detamo.setId(id); // Asegurarse de que el ID sea correcto
+            ModelMatricula actualizado = matriservice.modificarMatri(detamo);
+            if (actualizado == null) {
+                logger.error("No se encontró el detalle con ID: " + id);
+                return ResponseEntity.status(HttpStatus.NOT_FOUND).body("No se encontró el detalle.");
             }
+            logger.info("Detalle modificado correctamente.");
+            return ResponseEntity.status(HttpStatus.OK).body("Detalle modificado con éxito.");
         } catch (Exception e) {
-           logger.error("no se creo el detalle");
-           return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("se modifico el detalle");
+            logger.error("Error al modificar el detalle: " + e.getMessage());
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Error interno del servidor.");
         }
     }
 
