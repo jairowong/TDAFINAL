@@ -43,7 +43,7 @@ public class Matricula {
         }
     }
 
-    @GetMapping("/mostrar/")
+    @GetMapping("/mostrar/{id}")
     public ResponseEntity<?> buscarporId(@PathVariable Integer id){
         try {
             ModelMatricula modelMatri= matriservice.mostrarMatriId(id);
@@ -74,7 +74,7 @@ public class Matricula {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("no se creo el detalle");
         }
     }
-@PutMapping("/api/modificar")
+@PutMapping("/api/modificar/{id}")
     public ResponseEntity<?> modificarDetalle(@PathVariable Integer id, @RequestBody ModelMatricula detamo){
         ModelMatricula modificar= new ModelMatricula();
         if(detamo.getMat_estado()==null || detamo.getMat_grado()==null || detamo.getMat_estado()==null || detamo.getMat_seccion()==null){
@@ -100,7 +100,7 @@ public class Matricula {
 
 
     
-    @DeleteMapping("/borrar")
+    @DeleteMapping("/borrar/{id}")
     public ResponseEntity<String> eliminar(@PathVariable Integer id){
         try {
             boolean elininar=matriservice.eliminarMatri(id);

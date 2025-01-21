@@ -48,7 +48,7 @@ public class DetalleMatricula {
         }
     } 
 
-    @GetMapping("/api/mostrar")
+    @GetMapping("/mostrar/{id}")
     public ResponseEntity<?> buscarporId(@PathVariable Integer id){
         try {
             ModelDetalleMatricula detamodel= detalleservice.mostrarDetalleMatriId(id);
@@ -80,7 +80,7 @@ public class DetalleMatricula {
         }
     }
 
-    @PutMapping("/api/modificar")
+    @PutMapping("/modificar/{id}")
     public ResponseEntity<?> modificarDetalle(@PathVariable Integer id, @RequestBody ModelDetalleMatricula detamo){
         ModelDetalleMatricula modificar= new ModelDetalleMatricula();
         if(detamo.getGrado()==null || detamo.getCurso()==null){
@@ -104,7 +104,7 @@ public class DetalleMatricula {
         }
     }
 
-    @DeleteMapping("/api/borrar")
+    @DeleteMapping("/borrar/{id}")
     public ResponseEntity<String> eliminar(@PathVariable Integer id){
         try {
             boolean elininar=detalleservice.eliminarDetalleMatri(id);

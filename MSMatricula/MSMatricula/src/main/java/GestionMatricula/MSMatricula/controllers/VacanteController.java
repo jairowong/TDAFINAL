@@ -53,7 +53,7 @@ public class VacanteController {
 
     }
 
-    @GetMapping("/api/mostrarvacante")
+    @GetMapping("/api/mostrarvacante/{id}")
 
     public ResponseEntity<?> mostrarVacantes(@PathVariable Integer id){
 
@@ -88,7 +88,7 @@ public class VacanteController {
         }
     }
 
-     @PutMapping("/api/modificarVacante")
+     @PutMapping("/api/modificarVacante/{id}")
 
     public ResponseEntity<?> modificarVacante(@PathVariable Integer id, @RequestBody Vacante vaca){
 
@@ -116,7 +116,7 @@ public class VacanteController {
 
     }
    
-    @DeleteMapping("/api/eliminarvacante")
+    @DeleteMapping("/api/eliminarvacante/{id}")
 
         public ResponseEntity<String> eliminarVacantes (@PathVariable Integer id){
 

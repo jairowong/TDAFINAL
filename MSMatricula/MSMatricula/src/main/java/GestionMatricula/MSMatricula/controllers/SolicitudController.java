@@ -52,7 +52,7 @@ public class SolicitudController {
 
     }
 
-    @GetMapping("/mostrarSolictud")
+    @GetMapping("/mostrarSolictud/{id}")
 
     public ResponseEntity<?> mostrarSolicitudes(@PathVariable Integer id){
 
@@ -87,7 +87,7 @@ public class SolicitudController {
         }
     }
 
-    @PutMapping("/api/modificarSolicitud")
+    @PutMapping("/api/modificarSolicitud/{id}")
 
     public ResponseEntity<?> modificarSolicitudes(@PathVariable Integer id, @RequestBody Solicitud soli){
 
@@ -115,7 +115,7 @@ public class SolicitudController {
 
     }
 
-    @DeleteMapping("/api/Solicitud")
+    @DeleteMapping("/api/Solicitud/{id}")
 
         public ResponseEntity<String> eliminarSolicitudes (@PathVariable Integer id){
 
