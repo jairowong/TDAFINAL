@@ -1,5 +1,5 @@
 server:
-  port: 6001
+  port: 6002
   
 jwt:
   secret: Bx4MeizkOfmx5buS0AeRdfWkK1H4GI8abShDqtZq6gA=
@@ -23,44 +23,12 @@ spring:
               allowedHeaders: "*"
     routes:      
       
-      - id: MsUsuario
+      - id: MsVenta
         uri: http://localhost:8084
         predicates:
-            - Path=/auth/**
-      - id: MSMatricula
-        uri: http://localhost:87
-        predicates:
-            - Path=/api/matricula/**
-      - id: MSMatricula
-        uri: http://localhost:87
-        predicates:
-            - Path=/apiDetalle/**
-      - id: MSMatricula
-        uri: http://localhost:87
-        predicates:
-            - Path=/apisolicitud/**
-      - id: MSMatricula
-        uri: http://localhost:87
-        predicates:
-            - Path=/apivacante/**
-      - id: MSEstudiantes
-        uri: http://localhost:8801
-        predicates:
-            - Path=/documentacion/**
-
-      - id: MSEstudiantes
-        uri: http://localhost:8801
-        predicates:
-            - Path=/estudiante/**
-
-      - id: MSEstudiantes
-        uri: http://localhost:8801
-        predicates:
-            - Path=/apoderado/**
-      - id: MSPago
-        uri: http://localhost:85
-        predicates:
-            - Path=/api/pago/**
+            - Path=/auth/*venta*
+      
+     
  
 
  
