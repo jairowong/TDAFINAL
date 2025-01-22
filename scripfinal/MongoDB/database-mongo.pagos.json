@@ -1,0 +1,24 @@
+[{
+  "_id": 900,
+  "nombre": "walter",
+  "apellido": "ala",
+  "fecha": {
+    "$date": "2025-01-21T07:04:18.126Z"
+  },
+  "monto": 100,
+  "tipoPago": "targeta",
+  "idUsuario": 101,
+  "_class": "GestionPago.MSPago.model.PagoModel"
+},
+{
+  "_id": 1000,
+  "nombre": "jairo wong",
+  "apellido": "ala",
+  "fecha": {
+    "$date": "2025-01-21T07:08:15.214Z"
+  },
+  "monto": 100,
+  "tipoPago": "targeta",
+  "idUsuario": 101,
+  "_class": "GestionPago.MSPago.model.PagoModel"
+}]

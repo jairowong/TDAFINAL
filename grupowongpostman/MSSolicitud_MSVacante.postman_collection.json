@@ -1,0 +1,274 @@
+{
+	"info": {
+		"_postman_id": "0dc28d08-4eb4-4cdd-8004-0905b40a74ca",
+		"name": "MSSolicitud_MSVacante",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31102995"
+	},
+	"item": [
+		{
+			"name": "http://localhost:90/api/pago/list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:85/api/auth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "85",
+					"path": [
+						"api",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:85/api/pago/getById/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n    \"usuario\": \"haold\",\r\n    \"clave\": \"elmen\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:82/api/auth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "82",
+					"path": [
+						"api",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:87/api/solicitud/modificar/3",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"usuario\": \"DANTE\",\r\n    \"clave\": \"1234567\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:83/api/auth/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "83",
+					"path": [
+						"api",
+						"auth",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:87/api/solicitud/borrar/",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:82/api/auth/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "82",
+					"path": [
+						"api",
+						"auth",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:81/api/solicitud/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "   {\r\n   \r\n\r\n    \"idalumno\": \"2030\",\r\n    \"mat_fecha\": \"2025-01-10\",\r\n    \"mat_estado\": \"Inactivo\",\r\n    \"mat_grado\": \"Quinto\",\r\n    \"mat_seccion\": \"A\",\r\n    \"tipo_matricula\": 1\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6001/api/matricula/crear",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6001",
+					"path": [
+						"api",
+						"matricula",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post de vacante",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6001/apiDetalle/mostrar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6001",
+					"path": [
+						"apiDetalle",
+						"mostrar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post de vacanteid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6001/apiDetalle/mostrar/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6001",
+					"path": [
+						"apiDetalle",
+						"mostrar",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post de vacantemodificar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n    \r\n        \"idalumno\": 1,\r\n        \"idmatricula\": 101,\r\n        \"grado\": \"Quinto\",\r\n        \"seccion\": \"Z\",\r\n        \"curso\": \"Matemáticas\",\r\n        \"periodo\": \"2025\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:87/apiDetalle/modificar/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "87",
+					"path": [
+						"apiDetalle",
+						"modificar",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post de vacantecrear",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n    \r\n        \"idalumno\": 21,\r\n        \"idmatricula\": 101,\r\n        \"grado\": \"Sexto\",\r\n        \"seccion\": \"C\",\r\n        \"curso\": \"Matemáticas\",\r\n        \"periodo\": \"2024\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:87/apiDetalle/api/crear",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "87",
+					"path": [
+						"apiDetalle",
+						"api",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post de vacanteborrar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n    \r\n        \"idalumno\": 21,\r\n        \"idmatricula\": 101,\r\n        \"grado\": \"Sexto\",\r\n        \"seccion\": \"C\",\r\n        \"curso\": \"Matemáticas\",\r\n        \"periodo\": \"2024\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6001/apiDetalle/borrar/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6001",
+					"path": [
+						"apiDetalle",
+						"borrar",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
